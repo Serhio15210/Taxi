@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            background-color: #EFF4FE;
+            padding: 50px 220px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .logoClass{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+        }
+        .logoClass p{
+            font-size: 26px;
+            font-weight: 700;
+        }
+        .content1 {
+            background-color: white;
+            padding: 65px 85px;
+            position: relative;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 20px;
+            -moz-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            -webkit-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .title {
+
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 110%;
+            color: #24304F;
+            margin: auto;
+        }
+
+        .dearText {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: #566488;
+        }
+
+        .loginButton {
+            max-width: 231px;
+            cursor: pointer;
+            width: 100%;
+            height: 54px;
+            background: #4E7FF1;
+            box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.27);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 10px;
+
+        }
+        .transferBlock{
+            position: relative;
+            z-index: 5;
+        }
+        .transfer {
+            position: relative;
+            background: linear-gradient(168.25deg, #E2EAFF 10.82%, #F5F8FF 87.91%);
+            border-bottom: 2px solid #24304F;
+            border-radius: 15px 15px 0px 0px;
+            padding: 0 30px;
+            z-index: 6;
+
+        }
+        .transferBottom{
+            background: #4E7FF1;
+            border-radius: 100px;
+            position: absolute;
+            height: 22px;
+            width: 110%;
+            right: 0;
+            left: -5%;
+            bottom: -10px;
+            z-index: 1;
+        }
+        .transferTitle {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 160%;
+            color: #24304F;
+            padding-top: 30px;
+            margin-bottom: 22px;
+        }
+
+        .transferDetails {
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .detailItem {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .detailItem p {
+            font-size: 18px;
+            line-height: 160%;
+            width: 100%;
+        }
+        .detailItem img {
+            width: 20px;
+            height: 20px;
+        }
+        #price {
+            color: #566488;
+            text-align: left;
+            width: max-content;
+            white-space: nowrap;
+
+        }
+
+        .pin {
+            width: 70px;
+            height: 70px;
+            border-radius: 100px;
+            background-color: #4E7FF1;
+            position: absolute;
+            right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: -30px;
+        }
+
+        .footerText {
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            color: #8B96B5;
+            margin: 30px auto auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding-right: 38px !important;
+                padding-left: 38px !important;
+                padding-top: 20px !important;
+            }
+            .pin {
+                width: 35px;
+                height: 35px;
+                top: -15px;
+                right: 20px;
+            }
+            .pin img{
+                width: 25px;
+                height: 25px;
+            }
+            .content1 {
+                padding: 25px 20px;
+                max-width: 400px;
+                width: 100%;
+            }
+
+            .title {
+                width: 260px;
+                font-size: 26px;
+                text-align: left;
+                margin: unset;
+            }
+
+
+            .transfer {
+                padding: 0 20px;
+            }
+            .transferTitle {
+                font-size: 20px;
+            }
+            .transferBottom{
+                left: -15px;
+            }
+            .dearText {
+                font-size: 14px;
+                text-align: left;
+            }
+
+
+            .loginButton {
+                margin: unset;
+                max-width: 100%;
+            }
+
+            .detailItem p {
+                font-size: 14px;
+                line-height: 160%;
+                width: 100%;
+            }
+
+
+
+            .footerText {
+                font-size: 12px;
+                line-height: 160%;
+                text-align: center;
+                width: 100%;
+                color: #8B96B5;
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logoClass">
+        <img src="images/logo.png" style="width: 53px;height: 53px"/>
+        <div>
+            <p style="color: #4E7FF1">easy<br/><span style="color: #2DD792">transfer</span></p>
+
+        </div>
+    </div>
+    <div class="content1">
+        <div class="pin">
+            <img src="images/pin.png"/>
+        </div>
+        <p class="title">New Easy Transfer<br/><span style="color: #4E7FF1">Ride Available</span></p>
+        <p class="dearText"><b>Dear {{name}}</b>, a New Ride from Easy Transfer is<br/> available!</p>
+        <p class="dearText">Please read carefully the ride details before<br/> accepting the offer.</p>
+        <div class="transferBlock">
+        <div class="transfer">
+            <p class="transferTitle">Transfer details:</p>
+            <div style="width: 100%;height: 2px;background-color: #4E7FF1"></div>
+            <div class="transferDetails">
+                <div class="detailItem">
+                    <div style="display: flex;flex-direction: row;gap: 10px;align-items: center">
+                        <img src="images/calendar.png"/>
+                        <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap ">Date:</p>
+                    </div>
+                    <p style="color: #24304F;font-weight: 600;text-align: right ">09 July, 17:44</p>
+                </div>
+                <div class="detailItem">
+                    <div style="display: flex;flex-direction: row;gap: 10px;align-items: center">
+                        <img src="images/pickup.png"/>
+                        <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap ">
+                            Pickup:</p>
+                    </div>
+                    <p style="color: #24304F;font-weight: 600;text-align: right ">Nice Côte d'Azur Airport</p>
+                </div>
+                <div class="detailItem">
+                    <div style="display: flex;flex-direction: row;gap: 10px;align-items: center">
+                        <img src="images/dropdown.png"/>
+                        <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap ">Dropoff:</p>
+                    </div>
+                    <p style="color: #24304F;font-weight: 600;text-align: right ">Cannes</p>
+                </div>
+
+                <div class="detailItem">
+                    <div style="display: flex;flex-direction: row;gap: 10px;align-items: center">
+                        <img src="images/passengers.png"/>
+                        <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap ">
+                            Passengers:</p>
+                    </div>
+                    <p style="color: #24304F;font-weight: 600;text-align: right ">1</p>
+                </div>
+                <div class="detailItem">
+                    <div style="display: flex;flex-direction: row;gap: 10px;align-items: center">
+                        <img src="images/luggages.png"/>
+                        <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap ">Luggages:</p>
+                    </div>
+                    <p style="color: #24304F;font-weight: 600;text-align: right ">0</p>
+                </div>
+                <div class="detailItem">
+                    <div style="display: flex;flex-direction: row;gap: 10px;align-items: center">
+                        <img src="images/carType.png"/>
+                        <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap ">Car type:</p>
+                    </div>
+                    <p style="color: #24304F;font-weight: 600;text-align: right ">VIP</p>
+                </div>
+                <div class="detailItem" style="margin-top: 15px">
+                    <div style="display: flex;flex-direction: row;gap: 10px;align-items: center">
+                        <img src="images/price.png"/>
+                        <p id="price">Price:</p>
+                    </div>
+                    <p id="cost">€85.00</p>
+                </div>
+            </div>
+
+        </div>
+            <span class="transferBottom"></span>
+        </div>
+        <!--        <div style="width: 460px;height: 22px;background: #4E7FF1;border-radius: 100px;position: absolute;margin: -10px auto auto;"></div>-->
+        <p class="dearText" style="margin-top: 45px">This ride will be available utile one of our pertners accept it.
+            Read carefully the ride
+            details and be the first to accept it!</p>
+
+        <div class="loginButton">
+            <a href="/" style="color: white;font-weight: 600;text-decoration: none">Check the ride</a>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5734 19.4934L18.9867 16.08L15.5734 12.6667" stroke="white" stroke-width="2"
+                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.33337 16.08H18.8934" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 5.33331C21.8933 5.33331 26.6667 9.33331 26.6667 16C26.6667 22.6666 21.8933 26.6666 16 26.6666"
+                      stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+
+        </div>
+        <p class="footerText" style="text-align: left">By accepting the ride, you agree with our <a href="/" style="color: #2DD792">Cancellation
+            Policy.</a></p>
+    </div>
+
+
+    <p class="footerText">Made with ❤<br/> This is an automated email - please do not reply to it.</p>
+</div>
+</body>
+</html>
+

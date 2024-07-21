@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            background-color: #EFF4FE;
+            padding: 50px 220px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .logoClass {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .logoClass p {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .content1 {
+            background-color: white;
+            padding: 65px 0px 0;
+            position: relative;
+            border-radius: 20px;
+            -moz-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            -webkit-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 600px;
+            width: 100%;
+
+
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 110%;
+            color: #24304F;
+
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0px 65px 0;
+            text-align: center;
+        }
+
+        .dearText {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: #566488;
+            text-align: center;
+            padding: 0px 65px 0;
+        }
+
+        .companyBlock{
+            margin-right: 65px;
+            margin-left: 65px;
+            background: #4E7FF1;
+            border-radius: 10px;
+            padding: 40px 30px ;
+            margin-bottom: 10px;
+            margin-top: 10px;
+
+        }
+        .companyItem{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+
+        }
+        .companyItem p{
+            font-size: 18px;
+            color: #FFFFFF;
+
+        }
+
+
+
+        .footerText {
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            color: #8B96B5;
+            margin: 30px auto auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding-right: 38px !important;
+                padding-left: 38px !important;
+                padding-top: 20px !important;
+            }
+
+            .content1 {
+                padding: 25px 0px 0;
+                max-width: 400px;
+                width: 100%;
+            }
+
+            .title {
+
+                font-size: 26px;
+                text-align: left;
+                padding: 0px 20px;
+            }
+
+            .dearText {
+                font-size: 14px;
+                text-align: left;
+                padding: 0px 20px;
+            }
+
+            .detailItem p {
+                font-size: 14px;
+                line-height: 160%;
+
+            }
+
+
+
+            .companyBlock{
+                padding: 10px 30px 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .companyBlock p{
+                font-size: 14px;
+            }
+            .footerText {
+                font-size: 12px;
+                line-height: 160%;
+                text-align: center;
+                width: 100%;
+                color: #8B96B5;
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logoClass">
+        <img src="images/logo.png" style="width: 53px;height: 53px"/>
+        <div>
+            <p style="color: #4E7FF1">easy<br/><span style="color: #2DD792">transfer</span></p>
+
+        </div>
+    </div>
+    <div class="content1">
+
+        <p class="title"><span style="color: #4E7FF1">Completed</span> company<br/> registration</p>
+        <p class="dearText">A new company has successfully submitted all the necessary documents for registration in <b>Nice.</b></p>
+        <div class="companyBlock">
+            <div class="companyItem">
+                <p style="opacity: 0.7;">Company name:</p>
+                <p style="font-weight: 700">Lolosha</p>
+            </div>
+            <div class="companyItem">
+                <p style="opacity: 0.7;">Company ID :</p>
+                <p style="font-weight: 700">1984</p>
+            </div>
+            <div class="companyItem">
+                <p style="opacity: 0.7;">Country:</p>
+                <p style="font-weight: 700">France</p>
+            </div>
+            <div class="companyItem">
+                <p style="opacity: 0.7;">City:</p>
+                <p style="font-weight: 700">Nice</p>
+            </div>
+        </div>
+        <p class="dearText"><b>Please check the information on the Dashboard and accept or refuse candidate.</b></p>
+        <img src="images/completedCompany.png" class="experienceImg"/>
+    </div>
+
+
+    <p class="footerText">Made with ❤<br/> This is an automated email - please do not reply to it.</p>
+</div>
+</body>
+</html>
+

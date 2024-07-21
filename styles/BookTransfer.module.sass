@@ -1,0 +1,244 @@
+.wrapper
+  background-color: #F1F5FF
+  width: 100%
+  height: 100%
+.radio
+  width: 23px
+  height: 23px
+  border: 2px solid #4E7FF1
+  margin-right: 35px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 20px
+.step
+  margin-bottom: 50px
+  color: #8B97B7
+.vehicleClass
+  max-width: 1440px
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  gap: 45px
+  padding-bottom: 100px
+  .vehicleBlock
+    display: flex
+    flex-direction: column
+    gap: 40px
+    max-width: 660px
+    width: 100%
+    .title
+      font-weight: 700
+      font-size: 50px
+    .vehicleDetailsRow
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+
+      width: 100%
+      .passengerRow
+        display: flex
+        flex-direction: row
+        align-items: center
+        gap: 10px
+        p
+          font-size: 18px
+          font-weight: 700
+      .passengerCount
+        display: flex
+        flex-direction: row
+        align-items: center
+        gap: 15px
+      .countButton
+        border: 1px solid #CDD4E9
+        border-radius: 5px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 35px
+        height: 35px
+        cursor: pointer
+    .vehiclesColumn
+      display: flex
+      flex-direction: column
+      gap: 20px
+    .vehicleItem
+      background-color: #FFFFFF
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06)
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      padding: 43px 36px
+      border-radius: 10px
+      .itemFirstRow
+        display: flex
+        flex-direction: row
+        align-items: center
+      .vehicleImg
+        margin-right: 75px
+        //width: 112px
+
+      .vehicleInfo
+        display: flex
+        flex-direction: column
+        gap: 8px
+
+        .itemName
+          font-weight: 700
+          font-size: 22px
+      .itemPrice
+        font-size: 20px
+        font-weight: 600
+        color: #566488
+  @media (max-width: 1000px)
+    flex-direction: column
+    align-items: center
+    @media (max-width: 800px)
+      .title
+        font-size: 45px
+
+.summaryBlock
+  background-color: #FFFFFF
+  border-radius: 10px
+  padding: 33px 50px
+  display: flex
+  max-width: 460px
+  width: 100%
+  flex-direction: column
+  gap: 25px
+  height: 500px
+  .title
+    font-weight: 700
+    font-size: 30px
+  .summaryInfo
+    color: #566488
+    display: flex
+    flex-direction: column
+    gap: 30px
+  .pricesBlock
+    display: flex
+    flex-direction: column
+    gap: 23px
+    margin-top: 32px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+    padding-bottom: 30px
+    .priceItem
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      p
+        font-size: 18px
+        font-weight: 600
+  .result
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    font-size: 22px
+    font-weight: 700
+  @media (max-width: 800px)
+    display: none
+.nextButton
+  background-color: #2DD792
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #FFFFFF
+  padding: 17px 0
+  border-radius: 10px
+  box-shadow: 0px 10px 40px rgba(45, 220, 134, 0.19)
+  cursor: pointer
+
+
+.vehicleMobileClass
+  display: flex
+  flex-direction: column
+  gap: 35px
+  .title
+    font-size: 30px
+    font-weight: 700
+  .vehicleMobileRow
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    font-size: 18px
+    font-weight: 700
+  .passengerMobileRow
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 15px
+
+  .passengerMobileCount
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 15px
+  .countButton
+    border: 1px solid #CDD4E9
+    border-radius: 5px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 35px
+    height: 35px
+    cursor: pointer
+  .vehiclesMobileColumn
+    display: flex
+    flex-direction: column
+    gap: 20px
+  .vehicleMobileItem
+    background-color: #FFFFFF
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06)
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    padding: 33px 20px
+    height: 88px
+    border-radius: 10px
+  .mobileImg
+    transform: scaleX(-1)
+    max-width: 107px
+    width: 100%
+    object-fit: contain
+    height: 45px
+  .firstRow
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 22px
+  .vehicleMobileInfo
+      display: flex
+      flex-direction: column
+      gap: 8px
+      .itemName
+        font-weight: 700
+        font-size: 17px
+  .itemPrice
+    font-size: 16px
+    font-weight: 600
+    color: #566488
+  @media (max-width: 350px)
+    .title
+      font-size: 24px
+    .vehicleMobileRow
+      font-size: 14px
+    .firstRow
+      gap: 10px
+    .mobileImg
+      max-width: 70px
+    .vehicleMobileInfo
+      .itemName
+        font-size: 14px
+      img
+        width: 14px
+        height: 14px
+      div
+        gap: 10px !important
+        div
+          gap: 5px !important
+

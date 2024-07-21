@@ -1,0 +1,732 @@
+.container
+  width: 100%
+  height: 100%
+
+  margin: 0 auto
+  padding: 25px 67px 25px 290px
+  @media (max-width: 1200px)
+    padding: 25px 64px
+  @media (max-width: 800px)
+    padding: 20px
+    padding-top: 70px
+
+.pageHeader
+  display: flex
+  justify-content: space-between
+  flex-direction: row
+  align-items: center
+  width: 100%
+
+  .headerImg
+    background-color: #2DD791
+    box-shadow: 0px 4px 30px rgba(45, 215, 145, 0.38)
+    border-radius: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    max-width: 56px
+    width: 56px
+    height: 56px
+    img
+      width: 20px
+      height: 20px
+    @media (max-width: 500px)
+      max-width: 50px
+      width: 50px
+      height: 50px
+
+  .headerTitle
+    font-size: 28px
+    font-weight: 600
+    color: #24304F
+    @media (max-width: 500px)
+      font-size: 25px
+
+  @media (max-width: 500px)
+    .exitBlock
+      padding: 10px
+
+      p
+        display: none
+
+.exitBlock
+  border: 1px solid #CDD4E9
+  border-radius: 6px
+  padding: 10px 20px
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  gap: 12px
+  position: relative
+  color: #CDD4E9
+  cursor: pointer
+
+  p
+    color: #A3AEC9
+    font-size: 13px
+    font-weight: 600
+    text-align: center
+
+.dashboardInfoRow
+  display: flex
+  flex-direction: row
+  gap: 30px
+  margin-top: 30px
+  @media (max-width: 1200px)
+    flex-wrap: wrap
+  @media (max-width: 800px)
+    align-items: center
+  @media (max-width: 500px)
+    justify-content: center
+
+
+.dashboardPayments
+  background-color: #FFFFFF
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.03)
+  border-radius: 10px
+  display: flex
+  flex-direction: row
+
+  .transfersMonth
+    display: flex
+    flex-direction: column
+    gap: 26px
+    border-right: 1px solid rgba(0, 0, 0, 0.1)
+    padding: 23px
+
+    .countBlock
+      color: #24304F
+      font-weight: 600
+      display: flex
+      flex-direction: column
+      gap: 10px
+
+      p
+        font-size: 40px
+
+      span
+        font-size: 14px
+
+  @media (max-width: 500px)
+    flex-direction: column
+    width: 100%
+    .transfersMonth
+      .countBlock
+        p
+          font-size: 30px
+
+.paymentsMonth
+  display: flex
+  flex-direction: column
+  gap: 26px
+  padding: 23px 40px 30px 30px
+  width: 100%
+
+  .title
+    font-weight: 600
+    font-size: 22px
+    line-height: 160%
+    color: #24304F
+
+  .paymentRow
+    display: flex
+    flex-direction: row
+    gap: 25px
+    align-items: center
+
+    justify-content: space-between
+
+    p
+      color: #566488
+      font-size: 14px
+      font-weight: 600
+
+    .paymentTitle
+      font-size: 30px
+      color: #24304F
+
+  @media (max-width: 500px)
+    .title
+      font-size: 20px
+    .paymentRow
+      .paymentTitle
+        font-size: 20px
+        color: #24304F
+
+.clientsBlock
+  background-color: #FFFFFF
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-width: 210px
+  width: 100%
+  height: 203px
+
+  p
+    color: #24304F
+    font-weight: 600
+
+  .countTitle
+    font-size: 40px
+
+  @media (max-width: 500px)
+    max-width: 100%
+    .countTitle
+      font-size: 30px
+
+.companiesBlock
+  background-color: #FFFFFF
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  .companiesTitleRow
+    display: flex
+    flex-direction: row
+    align-items: center
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+    padding: 23px
+    gap: 30px
+    width: 100%
+
+  p
+    color: #24304F
+    font-weight: 600
+
+  .countTitle
+    font-size: 40px
+
+  .companiesStatusCount
+    display: flex
+    flex-direction: column
+    padding: 13px 23px 23px
+    width: 100%
+    height: 100%
+    gap: 15px
+
+  @media (max-width: 500px)
+    width: 100%
+    p
+      font-size: 14px
+    .companiesTitleRow
+      justify-content: space-between
+
+      .exitBlock
+        padding: 10px
+
+        p
+          font-size: 12px
+    .countTitle
+      font-size: 30px
+
+.transfersInfoBlock
+  display: flex
+  flex-direction: column
+  gap: 25px
+  margin-top: 40px
+
+  .transferTitle
+    font-size: 22px
+    font-weight: 600
+    color: #24304F
+
+    span
+      font-size: 30px
+      white-space: nowrap
+
+  .transfersItemsRow
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    flex-wrap: wrap
+    gap: 30px
+
+  @media (max-width: 800px)
+    .transfersItemsRow
+      grid-template-columns: 1fr 1fr
+  @media (max-width: 500px)
+    .exitBlock
+      padding: 10px
+    .transferTitle
+
+      span
+        font-size: 20px
+    .transfersItemsRow
+      display: flex
+      flex-direction: column
+
+
+.infoImgBlock
+  background: #D9E5FE
+  border-radius: 10px
+  width: 40px
+  height: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.rowContainer
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.searchRow
+  display: flex
+  align-items: center
+  flex-direction: row
+  justify-content: space-between
+  width: 100%
+  margin-top: 30px
+  .statusSelect
+    max-width: 225px
+    width: 100%
+  @media (max-width: 800px)
+    gap: 20px
+    .inputSearch
+      max-width: 100%
+  @media (max-width: 600px)
+    flex-direction: column
+    .statusSelect
+      max-width: 100%
+    .downloadButton
+      width: 100%
+.selectRow
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 15px
+  width: 100%
+  .select
+    max-width: 225px
+    background-color: transparent
+    width: 100%
+    height: 40px
+    border: none
+    color: #566488
+  @media (max-width: 600px)
+    .select
+      max-width: 100%
+  @media (max-width: 500px)
+    flex-direction: column
+    .select
+      max-width: 100%
+
+.inputButtonRow
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 15px
+  width: 100%
+  .inputSearch
+    max-width: 370px
+    width: 100%
+  @media (max-width: 600px)
+    flex-direction: column
+    .inputSearch
+      max-width: 100% !important
+
+.inputSearch
+  background: #FFFFFF
+  border-radius: 7px
+  height: 40px
+  padding-left: 15px
+  padding-right: 15px
+  display: flex
+  flex-direction: row
+  align-items: center
+  max-width: 530px
+  width: 100%
+
+  input
+    width: 100%
+    height: 100%
+    color: #A6B2D0
+    font-size: 14px
+
+  input::placeholder
+    color: #A6B2D0
+
+.downloadButton
+  background: #4E7FF1
+  box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.44)
+  border-radius: 6px
+  padding: 10px 20px
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  position: relative
+  p
+    color: #FFFFFF
+    font-weight: 600
+    font-size: 14px
+  .excelButton
+    position: absolute
+    width: 100%
+    height: 100%
+    background: transparent
+    box-shadow: none
+    border: none
+    cursor: pointer
+.tableEditButton
+  width: 47px
+  height: 47px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 10px
+  position: relative
+  .messageText
+    position: absolute
+    z-index: 5
+    background-color: #566488
+    padding: 8px 15px
+    color: #FFFFFF
+    bottom: -50px
+    max-width: 75px
+    height: 37px
+    width: 100%
+    right: 0
+    font-size: 14px
+
+    justify-content: center
+    border-radius: 5px
+    display: none
+  &:hover
+    background-color: #8B97B7
+    .messageText
+      display: flex
+    svg
+      fill: #FFFFFF
+.tableDeleteButton
+  width: 47px
+  height: 47px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 10px
+  position: relative
+  svg
+    fill: #566488
+  .messageText
+    position: absolute
+    z-index: 5
+    background-color: #566488
+    padding: 8px 15px
+    color: #FFFFFF
+    bottom: -50px
+    max-width: 75px
+    height: 37px
+    width: 100%
+    right: 0
+    font-size: 14px
+
+    justify-content: center
+    border-radius: 5px
+    display: none
+  &:hover
+    background-color: #F35046
+    .messageText
+      display: flex
+    svg
+      fill: #FFFFFF
+.tableCopyButton
+  width: 47px
+  height: 47px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 10px
+  position: relative
+  svg
+    fill: #566488
+  .messageText
+    position: absolute
+    z-index: 5
+    background-color: #566488
+    padding: 8px 11px
+    color: #FFFFFF
+    bottom: -50px
+    height: 37px
+    width: 135px
+    right: -45px
+    font-size: 14px
+
+    justify-content: center
+    border-radius: 5px
+    display: none
+  &:hover
+    background-color: #4E7FF1
+    .messageText
+      display: flex
+    svg
+      fill: #FFFFFF
+.transferTableText
+  color: #566488
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+.tableCell
+  background-color: white !important
+  border-bottom: none !important
+  position: relative !important
+
+  .messageText
+    position: absolute
+    z-index: 5
+    background-color: #566488
+    padding: 8px 15px
+    color: #FFFFFF
+    bottom: -25px
+    width: max-content
+    height: 37px
+
+    left: 0
+    right: 0
+    font-size: 14px
+    justify-content: center
+    border-radius: 5px
+    display: none
+  &:hover
+
+    .messageText
+      display: flex
+
+.addCompanyContainer
+  background-color: #FFFFFF
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02)
+  border-radius: 6px
+  display: flex
+  flex-direction: column
+  gap: 55px
+  padding: 53px 64px
+  margin-top: 20px
+  .title
+    font-weight: 600
+    font-size: 26px
+    line-height: 160%
+    color: #24304F
+  .addCompanyRow
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 20px
+    textarea
+      height: 145px !important
+  .activeButtonRow
+    display: flex
+    flex-direction: row
+    align-items: center
+  .addInput
+    max-width: 100%
+    width: 100%
+  .stepCircle
+    background-color: #2DD792
+    width: 33px
+    height: 33px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #FFFFFF
+    font-size: 18px
+    font-weight: 700
+  .stepTitle
+    font-size: 22px
+    font-weight: 700
+    color: #24304F
+  .documentsRow
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    gap: 25px
+  @media (max-width: 800px)
+    padding: 30px 40px
+    .addCompanyRow
+      grid-template-columns: 1fr 1fr
+    .documentsRow
+      grid-template-columns: 1fr 1fr 1fr
+  @media (max-width: 680px)
+    .vehicleDetailsRow
+      flex-direction: column
+      align-items: flex-start
+  @media (max-width: 500px)
+    padding: 30px 20px
+    .addCompanyRow
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 100%
+      input
+        max-width: 100% !important
+    .documentsRow
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 100%
+      .documentPickItem
+        max-width: 100%
+    .vehicleDetailsRow
+      align-items: center
+      .rowContainer
+        justify-content: space-between
+        width: 100%
+  @media (max-width: 350px)
+    .activeButtonRow
+      flex-direction: column
+      width: 100%
+      .exitBlock
+        max-width: 100% !important
+        width: 100% !important
+    .vehicleDetailsRow
+      .rowContainer
+        justify-content: center
+        gap: 20px !important
+
+.addTransferButtonRow
+  display: flex
+  flex-direction: row
+  gap: 10px
+  align-items: center
+  .exitBlock
+    gap: 5px
+  @media (max-width: 500px)
+    flex-direction: column
+    .exitBlock
+      max-width: 100%
+      width: 100%
+      justify-content: center
+.documentPickItem
+  max-width: 225px
+  position: relative
+  width: 100%
+  height: 130px
+  border: 1px dashed #A3AEC9
+  border-radius: 10px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  gap: 15px
+  cursor: pointer
+  padding: 30px
+  input[type="file"]
+    display: none
+  p
+    color: #566488
+  &:hover
+    p
+      color: #4E7FF1 !important
+    path
+      fill: #4E7FF1
+.saveButton
+  background: #2DD792
+  box-shadow: 0px 10px 40px rgba(45, 215, 146, 0.22)
+  border-radius: 6px
+  color: #FFFFFF
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: row
+  padding: 10px 25px
+  max-width: 135px
+  width: 100%
+  cursor: pointer
+  gap: 10px
+  margin-top: 35px
+  @media (max-width: 500px)
+    margin: 35px auto auto
+    max-width: 100% !important
+
+.vehicleDetailsRow
+  display: flex
+  flex-direction: row
+  align-items: center
+  margin-top: 35px
+  width: 100%
+  gap: 60px
+.passengerRow
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 10px
+
+  p
+    font-size: 18px
+    font-weight: 700
+.passengerCount
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 15px
+.countButton
+  border: 1px solid #CDD4E9
+  border-radius: 5px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 35px
+  height: 35px
+  cursor: pointer
+
+.routeInput
+  background-color: transparent
+  border: 1px solid #CDD4E9
+  border-radius: 6px
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 10px
+  padding: 10px
+  width: 100%
+  input
+    background-color: transparent
+    width: 100%
+    font-size: 18px
+  @media (max-width: 1200px)
+    max-width: 100% !important
+    width: 100% !important
+.personColumn
+  display: flex
+  flex-direction: column
+  gap: 15px
+  margin-bottom: 20px
+.personalizeItem
+  background-color: #EFF4FE
+  border-radius: 5px
+  padding: 25px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  .personFirstRow
+    display: flex
+    flex-direction: row
+    width: 100%
+    gap: 35px
+    align-items: flex-start
+  .personText
+    display: flex
+    flex-direction: column
+    gap: 8px
+    p
+      font-size: 20px
+      font-weight: 700
+    span
+      max-width: 440px
+      width: 100%
+      font-size: 14px
+      color: #566488
+  @media (max-width: 500px)
+    .personFirstRow
+      gap: 20px
+    .personText
+      p
+        font-size: 16px
+      span
+        font-size: 13px
+  @media (max-width: 375px)
+    .personFirstRow
+      gap: 10px
+    padding: 15px

@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&display=swap')
+html
+  scroll-behavior: smooth !important
+body
+  padding: 0
+  margin: 0
+  font-family: 'Open Sans', sans-serif
+  overflow-x: hidden
+
+
+a
+  color: inherit
+  text-decoration: none
+  cursor: pointer
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd
+  margin: 0
+
+ul[class],
+ol[class]
+  list-style: none
+*
+  box-sizing: border-box
+
+.container
+  width: 100%
+
+  max-width: 1400px
+  margin: 0 auto
+  padding: 0 120px
+  @media (max-width: 1100px)
+    padding: 0 64px
+  @media (max-width: 500px)
+    padding: 0 38px
+input:active, :hover, :focus
+  outline: 0 !important
+  outline-offset: 0 !important
+  box-shadow: none !important
+input
+  border: none
+
+.buttonNext
+  border: none
+  background-color: #2DD792
+  box-shadow: 0px 10px 40px rgba(45, 220, 134, 0.19)
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  color: white
+  border-radius: 10px
+  padding: 16px 32px
+  cursor: pointer
+  font-size: 14px
+  @media (max-width: 500px)
+    font-size: 13px
+.react-switch-handle
+  width: 20px !important
+  height: 20px !important
+  top: 3px !important
+
+//.paging-item
+//  display: none
+//.slider-control-centerleft
+//  left: -23px!important
+//  button
+//    width: 66px
+//    height: 66px
+//    color: transparent!important
+//    background-color: transparent !important
+//    padding: 0
+//    opacity: 1
+//
+//
+//.slider-control-centerright
+//  right: -23px!important
+//  button
+//    width: 66px
+//    height: 66px
+//    color: transparent!important
+//    background-color: transparent !important
+//    padding: 0
+//    opacity: 1
+//
+//  @media (max-width: 1300px)
+//    right: -19px !important
+//  @media (max-width: 1000px)
+//    right: -12px !important
+//  @media (max-width: 690px)
+//    right: -22px!important
+//.css-1elwnq4-MuiPaper-root-MuiAccordion-root::before
+//  border: none !important
+//  box-shadow: none !important
+//  background-color: transparent
+//.css-a88p61-MuiInputBase-root-MuiInput-root:before
+//  pointer-events: visible
+//  position: center
+//.css-yw020d-MuiAccordionSummary-expandIconWrapper
+//  width: auto
+//.css-1elwnq4-MuiPaper-root-MuiAccordion-root:before
+//  position: center
+//  background-color: white !important
+//body::-webkit-scrollbar
+//  width: 12px
+///* width of the entire scrollbar */
+//body::-webkit-scrollbar-track
+//  border: 1px solid rgba(171, 129, 237, 0.13)
+//  border-radius: 10px
+//  background: rgba(39, 45, 77, 0.24)
+//body::-webkit-scrollbar-thumb
+//  background: rgba(39, 45, 77, 0.24)
+//  /* color of the scroll thumb */
+//
+//  border-radius: 20px
+//
+//body::-webkit-scrollbar
+//  width: 10px
+///* width of the entire scrollbar */
+//body::-webkit-scrollbar-track
+//  border: 1px solid rgba(171, 129, 237, 0.13)
+//  border-radius: 10px
+//
+//body::-webkit-scrollbar-thumb
+//  background: rgba(61, 41, 119, 1)
+//  /* color of the scroll thumb */
+//
+//  border-radius: 20px
+//.pretty-print
+//  background-color: black !important
+.react-calendar
+  width: 350px
+  max-width: 100%
+  background: white
+  border: 1px solid transparent !important
+  font-family: Arial, Helvetica, sans-serif
+  line-height: 1.125em
+  padding: 30px
+  border-radius: 5px
+  button:hover:active
+    background: #2DD792 !important
+    border-radius: 10px !important
+  button:hover
+    border-radius: 10px !important
+  abbr[title]
+    text-decoration: none
+  .react-calendar__tile--active
+    background-color: #2DD792 !important
+    border-radius: 10px
+    color: white
+  .react-calendar__tile--now
+    background-color: #4E7FF1 !important
+    border-radius: 10px
+    color: white
+  .react-calendar__tile--active:enabled:hover
+    background-color: #2DD792
+  .react-calendar__tile--active:hover
+    background: none
+  .react-calendar__tile--active:active
+    background-color: #2DD792
+  .react-calendar__navigation__next2-button
+    display: none
+  .react-calendar__navigation__prev2-button
+    display: none
+  .react-calendar__navigation__prev-button
+    border: 1px solid #BAC4DD
+    border-radius: 10px
+    font-size: 25px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    color: #8B97B7
+  .react-calendar__navigation__next-button
+    border: 1px solid #BAC4DD
+    border-radius: 10px
+    font-size: 25px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    color: #8B97B7
+  .react-calendar__navigation button:enabled:hover, .react-calendar__navigation button:enabled:focus
+      background: none
+  .react-calendar__navigation__label__labelText--from
+    font-size: 20px
+    font-weight: 700
+  .react-calendar__tile
+    .react-calendar__month-view__days__day
+      background-color: red
+input[type='time']
+  border: none
+  color: #566488
+  font-size: 16px
+  font-family: 'Open Sans', sans-serif
+  width: 100%
+
+input::-webkit-calendar-picker-indicator
+
+  background: none
+  display: none
+
+input[type="time"]::-webkit-calendar-picker-indicator
+  background: none
+
+input[type='time']::-webkit-datetime-edit-fields-wrapper
+  display: flex
+
+
+
+input[type='time']::-webkit-datetime-edit-text
+input[type='time']::-webkit-datetime-edit-hour-field
+
+  margin-left: 2px
+
+
+
+
+input[type='time']::-webkit-datetime-edit-hour-field:focus
+  //background-color: #2DD792
+  border-radius: 3px
+
+
+
+
+
+/* Minute */
+input[type='time']::-webkit-datetime-edit-minute-field
+
+  border-radius: 3px
+
+input[type='time']::-webkit-datetime-edit-minute-field:focus
+  //background-color: #2DD792
+
+
+/* AM/PM */
+input[type='time']::-webkit-datetime-edit-ampm-field
+  background-color: #7155d3
+  border-radius: 15%
+  color: #566488
+
+
+
+/* 'X' button for resetting/clearing time */
+input[type='time']::-webkit-clear-button
+  display: none
+
+
+/* Up/Down arrows for incrementing/decrementing the value */
+input[type='time']::-webkit-inner-spin-button
+  display: none
+.special-label
+  background: white !important
+  @media (max-width: 500px)
+    background: #F1F5FF !important
+#white
+  .special-label
+    background-color: white !important
+
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root
+  box-shadow: none
+.css-1q1u3t4-MuiTableRow-root
+  border-radius: 100px !important
+.css-13xy2my
+  box-shadow: none !important
+.css-16c50h-MuiInputBase-root-MuiTablePagination-select
+  select
+    text-align-last: left !important
+    text-align: left !important
+    border: 1px solid #D1D8E8
+    border-radius: 10px
+    display: flex !important
+    align-items: flex-start !important
+    width: 71px !important
+    padding: 10px 20px !important
+    color: #707EA0 !important
+  svg
+    right: 10px !important
+.css-1psng7p-MuiTablePagination-spacer
+  -webkit-flex: none !important
+  flex: none !important
+.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar .MuiTablePagination-actions
+  margin: auto !important
+  margin-right: 0 !important
+  button
+    cursor: pointer !important
+.css-fikjyc-MuiTableCell-root-MuiTablePagination-root
+  border: none !important
+//.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper
+//  top: 200px !important
+.css-1s2u09g-control
+  height: 40px !important
+  background: transparent !important
+  border-color: #D1D8E8 !important
+  border-radius: 8px !important
+.css-1okebmr-indicatorSeparator
+  display: none !important
+.css-1pahdxg-control
+  background-color: transparent !important
+.css-qc6sy-singleValue
+  color: #566488 !important
+
+
+.inputBooking
+  border: none !important
+
+  width: 100% !important
+  .css-1s2u09g-control
+    border: none !important
+  .css-1hb7zxy-IndicatorsContainer
+    display: none !important
+  .css-1pahdxg-control
+    border: none !important
+    border-color: transparent !important
+    box-shadow: none !important
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            background-color: #EFF4FE;
+            padding: 148px 220px 30px;
+
+            gap: 40px;
+        }
+
+        .content1 {
+            margin: auto auto 40px;
+            background-color: white;
+            padding: 65px 0 0;
+            position: relative;
+            border-radius: 20px;
+            -moz-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            -webkit-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            max-height: 1125px;
+            height: 100%;
+
+        }
+
+        .content1 img {
+            margin: auto;
+        }
+        .content1 .experienceImg{
+            margin: auto;
+            width: 100%;
+            max-height: 513px;
+            height: 100%;
+        }
+
+        .title {
+
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 110%;
+            text-align: center;
+            color: #24304F;
+            margin: auto;
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+
+
+        .dearText {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: #566488;
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+
+        .loginButton {
+            max-width: 231px;
+            cursor: pointer;
+            width: 100%;
+            height: 54px;
+            background: #4E7FF1;
+            box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.27);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin-left: 65px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+
+        .footerText {
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            color: #8B96B5;
+            margin: 30px auto auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding-right: 38px !important;
+                padding-left: 38px !important;
+                padding-top: 20px !important;
+            }
+
+            .content1 {
+
+                padding: 25px 0 0;
+                margin: auto auto 40px;
+                height: 902px;
+
+            }
+            .content1 .experienceImg{
+                max-height: 282px;
+            }
+            .title {
+                width: 100%;
+                font-size: 26px;
+                text-align: left;
+
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+
+            .dearText {
+                font-size: 14px;
+                text-align: left;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .loginButton {
+                max-width: 100%;
+                width: 90%;
+                margin: auto;
+            }
+
+            .footerText {
+                font-size: 14px;
+                line-height: 160%;
+                text-align: center;
+                color: #8B96B5;
+                margin: 30px auto auto;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content1">
+        <p class="title">How was your <br/><span style="color: #4E7FF1">experience?</span></p>
+        <p class="dearText"><b>Dear {{name}}</b></p>
+        <p class="dearText"> Thank you for driving with Easy Transfer – We hope that you enjoyed your ride.</p>
+        <p class="dearText"> We’d love to know how you found the experience of using Easy Transfer so would like to
+            invite you to rate us on – it will only take two ticks and will be invaluable to us! Review us on:</p>
+        <p class="dearText"><b>Review us on:</b></p>
+        <div class="loginButton">
+
+            <div style="display: flex;align-items: center;margin: auto">
+                <a href="/" style="color: white;font-weight: 600;text-decoration: none;margin: auto 12px auto auto;">GOOGLE</a>
+                <img src="http://194.163.142.233:3000/star.png" width="32px" height="32px" style="margin: auto"/>
+            </div>
+
+        </div>
+        <p class="dearText"><b>Thank you so much!</b></p>
+        <p class="dearText"><b> Easy Transfer Team</b></p>
+        <img src="http://194.163.142.233:3000/experience.png" class="experienceImg"/>
+    </div>
+
+
+    <p class="footerText">Made with ❤<br/> This is an automated email - please do not reply to it.</p>
+</div>
+</body>
+</html>

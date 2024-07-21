@@ -1,0 +1,59 @@
+.signContainer
+  display: flex
+  flex-direction: column
+  gap: 20px
+  max-width: 560px
+  width: 100%
+
+  .title
+    color: white
+    font-weight: 700
+    font-size: 45px
+    line-height: 140%
+    text-align: center
+  .loginBlock
+    position: relative
+    background-color: #FFFFFF
+    border-radius: 10px
+    padding: 50px 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 20px
+  @media (max-width: 500px)
+    .title
+      color: #24304F
+      font-size: 30px
+    .loginBlock
+      padding: 20px 0
+      form
+        margin-bottom: 0 !important
+.loginButton
+  position: absolute
+  background-color: #2DD792
+  display: flex
+  align-items: center
+  justify-content: center
+  bottom: 0
+  width: 100%
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  padding: 15px
+  cursor: pointer
+  flex-direction: row
+  gap: 15px
+  p
+    color: #FFFFFF
+  @media (max-width: 500px)
+    border-radius: 10px
+    position: static
+.forgotPassword
+  color: #FFFFFF
+  text-decoration: underline
+  cursor: pointer
+  align-self: center
+  @media (max-width: 800px)
+    font-size: 14px
+  @media (max-width: 500px)
+    color: #4E7FF1

@@ -1,0 +1,103 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    /*========== Colors ==========*/
+    --text-color: #000000;
+    --bg-color: #222222;
+
+    /*========== Font and typography ==========*/
+    --body-font: "Poppins", sans-serif;
+    --normal-font-size: 0.938rem;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --normal-font-size: 1rem;
+    }
+}
+
+/*==================== BASE ====================*/
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--normal-font-size);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: var(--body-font);
+    transition: all 0.2s ease;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/*==================== SERVICE CARD ====================*/
+.icon {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 4px greenyellow;
+    transition: all 0.5s ease-in;
+    position: fixed;
+    left: 0px;
+    top: 0;
+    background: #4C7DE7;
+
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    animation: blurBlock 0.5s linear forwards;
+}
+
+.icon:active .info {
+    animation: focusBlock 0.5s linear forwards;
+}
+.icon:disabled .info{
+    animation: blurBlock 0.5s linear forwards;
+}
+@keyframes focusBlock {
+    from {
+        width: 100px;
+    }
+    to {
+        width: 100vw;
+        height: 100vh;
+        background: greenyellow;
+    }
+}
+@keyframes blurBlock {
+    from {
+        width: 100vw;
+        height: 100vh;
+        background: greenyellow;
+    }
+    to {
+        width: 100px;
+        height: 100px;
+        background: transparent;
+    }
+}
+/*.icon:active {*/
+/*    box-shadow: 0 0 0 3000px greenyellow;*/
+/*    border-radius: 50%;*/
+/*}*/

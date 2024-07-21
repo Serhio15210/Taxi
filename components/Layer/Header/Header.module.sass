@@ -1,0 +1,478 @@
+.wrapper
+  position: fixed
+  top: 0
+  right: 0
+  height: 100vh
+  width: 100%
+  background: transparent
+  display: none
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  z-index: 7
+  gap: 40px
+  clip-path: circle(25px at calc(100% - 30px) 20px)
+  transition: all 0.3s ease-in-out
+  &.active
+    background: #2DD490
+    clip-path: circle(75%)
+  p
+    font-size: 16px
+    color: white
+    border-bottom: 3px solid transparent
+    padding-bottom: 10px
+    cursor: pointer
+    &:hover
+      border-bottom: 3px solid white
+
+  @media (max-width: 800px)
+    display: flex
+
+.container
+  width: 100%
+  max-width: 1920px
+  margin: 0 auto
+  min-height: 670px
+  z-index: 5
+  background: url("/headerBg.png") no-repeat
+  background-size: cover
+  @media (min-width: 1700px)
+    background-size: cover
+  @media (max-width: 1100px)
+    background: url("/headerTabletBg.png") no-repeat
+    min-height: 700px
+    background-size: cover
+  @media (max-width: 800px)
+    background-size: contain
+
+  @media (max-width: 600px)
+    background: url("/headerMobileBg.png") no-repeat
+    background-size: cover
+    min-height: 800px
+  .content
+    max-width: 1440px
+    width: 100%
+    margin: 0 auto
+    height: 670px
+    .menu
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+      width: 100%
+      align-items: flex-end
+      height: max-content
+      padding: 5px 140px
+      .logoBlock
+        display: flex
+        flex-direction: row
+        gap: 10px
+        cursor: pointer
+      .logoText1
+        color: white
+        font-weight: 700
+        font-size: 30px
+      .logoText2
+        color: #2DD792
+        font-weight: 700
+        font-size: 30px
+      .burger_menu
+        display: none
+      @media (max-width: 1100px)
+        padding: 0 20px 0px
+        background-color: white !important
+        max-width: 1920px
+        max-height: 64px
+        height: 100%
+        align-items: center
+        .logoBlock
+          margin-top: 0px
+        .logoText1
+          color: #4E7FF1
+          font-size: 20px
+        .logoText2
+          font-size: 20px
+        img
+          width: 40px
+          height: 40px
+      @media (max-width: 800px)
+        padding-bottom: 0
+    img
+      cursor: pointer
+      z-index: 5
+    .link
+      color: black
+      font-size: 16px
+      font-weight: 400
+      cursor: pointer
+    .white
+      color: #FFFFFF
+      font-size: 14px
+      font-weight: 600
+      cursor: pointer
+      line-height: 21px
+      z-index: 5
+      height: max-content
+      padding-bottom: 20px
+      border-bottom: 3px solid transparent
+      border-top: 3px solid transparent
+      &.hover
+        border-bottom: 3px solid white
+      @media (max-width: 1100px)
+        color: black
+
+        padding-bottom: 0
+        height: 64px
+
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        font-size: 13px
+        border-top: 3px solid transparent
+        &:hover
+          border-top: 3px solid #4E7FF1
+          color: #4E7FF1
+
+
+
+    @media (max-width: 800px)
+
+      .menu
+        .burger_menu
+          z-index: 5
+          display: flex
+          justify-content: center
+          align-items: center
+          text-align: center
+          width: 64px
+          cursor: pointer
+          background: #2DD490
+          border: none
+          position: absolute
+          right: 0
+          height: 64px
+      .white, .link
+        display: none
+
+.containerWhite
+  width: 100%
+  max-width: 1920px
+  margin: 0 auto
+  z-index: 5
+  background: white
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.19)
+  .content
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.19)
+    .menu
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      max-width: 1440px
+      background-color: red
+      //box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.09)
+      width: 100%
+      align-items: center
+      height: max-content
+      padding: 5px 140px
+      .logoBlock
+        display: flex
+        flex-direction: row
+        gap: 10px
+      .logoText1
+        color: #4E7FF1
+        font-weight: 700
+        font-size: 30px
+      .logoText2
+        color: #2DD792
+        font-weight: 700
+        font-size: 30px
+      .burger_menu
+        display: none
+      @media (max-width: 1100px)
+        padding: 0px 64px
+        min-height: 64px
+        height: 100%
+        align-items: center
+        .logoBlock
+          margin-top: 0px
+        .logoText1
+          color: #4E7FF1
+          font-size: 20px
+        .logoText2
+          font-size: 20px
+        img
+          width: 40px
+          height: 40px
+
+      @media (max-width: 500px)
+        padding: 0 20px 0px
+    img
+      cursor: pointer
+      z-index: 5
+
+    .white
+      color: black
+      font-size: 14px
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      font-family: 'Open Sans', sans-serif
+      line-height: 21px
+      z-index: 5
+      height: 64px
+
+      border-bottom: 3px solid transparent
+      border-top: 3px solid transparent
+      &.hover
+        border-bottom: 3px solid #4E7FF1
+        color: #4E7FF1
+    @media (max-width: 800px)
+
+      .menu
+
+        .burger_menu
+          z-index: 5
+          display: flex
+          justify-content: center
+          align-items: center
+          text-align: center
+          width: 64px
+          cursor: pointer
+          background: #2DD490
+          border: none
+          position: absolute
+          right: 0
+          height: 64px
+      .white, .link
+        display: none
+.textContent
+
+  display: flex
+  flex-direction: column
+  gap: 30px
+  padding: 60px 140px
+  .gapLine
+    background: white
+    height: 2px
+    width: 46px
+  .title
+    color: white
+    font-size: 60px
+    font-weight: 700
+  .text
+    color: white
+    font-size: 18px
+    width: 560px
+    line-height: 160%
+  @media (max-width: 1100px)
+    padding: 64px
+    gap: 10px
+    .title
+      font-size: 45px
+    .gapLine
+      display: none
+    .text
+      width: 325px
+  @media (max-width: 800px)
+    .title
+      font-size: 30px
+
+    .text
+      font-size: 15px
+      width: 325px
+  @media (max-width: 600px)
+    gap: 20px
+    padding: 40px
+    .text
+      width: 100%
+.hideContainer
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  max-width: 1440px
+  width: 100%
+  @media (max-width: 1100px)
+    span
+      display: none
+
+.googleBlock
+  //position: absolute
+  //right: 140px
+  //bottom: 215px
+  background-color: white
+  max-width: 224px
+  width: 100%
+  display: flex
+  flex-direction: column
+  gap: 10px
+  border-radius: 10px
+  padding: 20px
+  .rating
+    font-size: 24px
+    font-weight: 700
+  .star
+    color: #FFD601
+    font-size: 18px
+  .reviews
+    font-size: 14px
+    color: #4E7FF1
+    text-decoration: underline
+    cursor: pointer
+  @media (max-width: 800px)
+    max-width: 200px
+    img
+      width: 73px !important
+      height: 23px !important
+    .rating
+      font-size: 22px
+    .star
+      font-size: 14px
+    .reviews
+      font-size: 13px
+.routeRelative
+  margin-top: -300px
+  margin-bottom: 20px
+  @media (max-width: 800px)
+    margin-top: -350px
+  @media (max-width: 720px)
+    margin-top: -400px
+  @media (max-width: 600px)
+    margin-top: -350px
+.route
+  background-color: white
+  box-shadow: 0px 10px 40px rgba(125, 136, 164, 0.11)
+  max-width: 1440px
+  width: 100%
+  padding: 38px 46px
+  display: flex
+  flex-direction: column
+  gap: 20px
+  border-radius: 10px
+  border-top-left-radius: 0
+  .switchRow
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 15px
+
+    justify-content: space-between
+  .switchBlock
+    display: none
+  .dateRow
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 15px
+  @media (max-width: 1200px)
+    .switchBlock
+      display: flex
+      flex-direction: row
+      align-items: center
+      gap: 10px
+  @media (max-width: 600px)
+    max-width: 100%
+    padding: 20px
+    .dateRow
+      flex-direction: column
+    .switchBlock
+      p
+        font-size: 15px !important
+  @media (max-width: 350px)
+    .switchRow
+      flex-direction: column
+      button
+        width: 100% !important
+.routeBlock
+  display: flex
+  flex-direction: row
+  align-items: center
+  max-width: 1440px
+  width: 100%
+  gap: 15px
+  @media (max-width: 1200px)
+    display: grid
+    grid-template-columns: 1fr
+    img
+      display: none
+    .routeInput
+      img
+        display: flex
+.trapezoid
+  max-width: 225px
+  width: 100%
+  height: 0
+  border-bottom: 50px solid white
+  border-left: 0px solid transparent
+  border-top-left-radius: 10px
+  border-top-right-radius: 35px
+  border-right: 20px solid transparent
+  display: flex
+  align-items: center
+  justify-content: center
+  p
+    margin: auto
+    position: relative
+    top: 17px
+    z-index: 6
+    font-size: 16px
+  @media (max-width: 600px)
+    max-width: 144px
+    p
+      font-size: 13px
+  @media (max-width: 600px)
+    max-width: 134px
+  @media (max-width: 350px)
+    max-width: 100px
+    p
+      font-size: 10px
+
+.routeInput
+  background-color: #EFF4FE
+  border-radius: 10px
+  display: flex
+  flex-direction: row
+  align-items: center
+  height: 53px
+  gap: 10px
+  padding: 10px
+  max-width: 283px
+  width: 100%
+  input
+    background-color: #EFF4FE
+  .select
+    max-width: 225px
+    background-color: transparent
+    width: 100%
+    height: 40px
+    border: none
+    color: #566488
+  @media (max-width: 1200px)
+    max-width: 100% !important
+    width: 100% !important
+.switchOutside
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 10px
+  @media (max-width: 1200px)
+    display: none
+.dateHide
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  max-width: 938px
+  width: 100%
+  @media (max-width: 1200px)
+    .dateRow
+      max-width: 100%
+      justify-content: space-between
+      width: 100%
+

@@ -1,0 +1,63 @@
+.addContainer
+  background-color: #FFFFFF
+  display: flex
+  max-width: 750px
+  width: 100%
+  align-items: center
+  flex-direction: column
+  padding: 46px 60px
+  gap: 30px
+  border-radius: 10px
+  .title
+    font-weight: 600
+    font-size: 36px
+    line-height: 120%
+    text-align: center
+    color: #24304F
+    margin-bottom: 10px
+
+  @media (max-width: 500px)
+    padding: 0
+    padding-top: 150px
+    .title
+      font-size: 30px
+
+.inputRow
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 20px
+  width: 100%
+  @media (max-width: 500px)
+    flex-direction: column
+.buttonsRow
+  display: flex
+  flex-direction: row
+  gap: 10px
+  margin-top: 30px
+
+.cancelButton
+  border: 1px solid #CDD4E9
+  border-radius: 6px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: row
+  cursor: pointer
+  color: #A3AEC9
+  padding: 10px 25px
+
+.saveButton
+  background: #2DD792
+  box-shadow: 0px 10px 40px rgba(45, 215, 146, 0.22)
+  border-radius: 6px
+  color: #FFFFFF
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: row
+  padding: 10px 25px
+  max-width: 135px
+  width: 100%
+  cursor: pointer
+  gap: 10px

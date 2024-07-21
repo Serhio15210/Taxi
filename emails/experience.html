@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            background-color: #EFF4FE;
+            padding: 50px 220px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .logoClass {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .logoClass p {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .content1 {
+            background-color: white;
+            padding: 65px 0px 0;
+            position: relative;
+            border-radius: 20px;
+            -moz-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            -webkit-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 600px;
+            width: 100%;
+
+
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 110%;
+            color: #24304F;
+
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0px 65px 0;
+            text-align: center;
+        }
+
+        .dearText {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: #566488;
+            padding: 0px 65px 0;
+        }
+
+        .loginButton {
+            max-width: 231px;
+            cursor: pointer;
+            width: 100%;
+            height: 54px;
+            background: #4E7FF1;
+            box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.27);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin-left: 65px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            gap: 10px;
+
+        }
+
+        .experienceImg{
+            margin-bottom: -40px;
+            margin-top: -70px;
+        }
+        .footerText {
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            color: #8B96B5;
+            margin: 30px auto auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding-right: 38px !important;
+                padding-left: 38px !important;
+                padding-top: 20px !important;
+            }
+
+            .content1 {
+                padding: 25px 0px 0;
+                max-width: 400px;
+                width: 100%;
+            }
+
+            .title {
+                width: 260px;
+                font-size: 26px;
+                text-align: left;
+                padding: 0px 20px;
+            }
+            .dearText {
+                font-size: 14px;
+                text-align: left;
+                padding: 0px 20px;
+            }
+            .detailItem p {
+                font-size: 14px;
+                line-height: 160%;
+
+            }
+            .loginButton{
+
+                 margin: auto;
+                font-size: 14px;
+                max-width: 90%;
+                width: 100%;
+            }
+            .experienceImg{
+                margin-top: 0;
+                margin-bottom: -18px;
+            }
+            .footerText {
+                font-size: 12px;
+                line-height: 160%;
+                text-align: center;
+                width: 100%;
+                color: #8B96B5;
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logoClass">
+        <img src="images/logo.png" style="width: 53px;height: 53px"/>
+        <div>
+            <p style="color: #4E7FF1">easy<br/><span style="color: #2DD792">transfer</span></p>
+
+        </div>
+    </div>
+    <div class="content1">
+
+        <p class="title">How was your<span style="color: #4E7FF1"> experience? </span></p>
+        <p class="dearText"><b>Dear {{name}}</b>,</p>
+        <p class="dearText"> Thank you for driving with Easy Transfer – We hope that you enjoyed your ride.</p>
+        <p class="dearText"> We’d love to know how you found the experience of using Easy Transfer so would like to invite you to rate us on – it will only take two ticks and will be invaluable to us!</p>
+        <p class="dearText"><b>Review us on:</b></p>
+
+        <div class="loginButton">
+            <a href="/" style="color: white;font-weight: 600;text-decoration: none">GOOGLE</a>
+            <img src="images/star.png" width="32px" height="32px"/>
+        </div>
+        <p class="dearText"><b>Thank you so much!</b></p>
+        <p class="dearText"><b>Easy Transfer Team</b></p>
+        <img src="images/experience.png" class="experienceImg"/>
+    </div>
+
+
+    <p class="footerText">Made with ❤<br/> This is an automated email - please do not reply to it.</p>
+</div>
+</body>
+</html>
+

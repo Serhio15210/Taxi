@@ -1,0 +1,450 @@
+.container
+  padding-left: 300px
+  padding-top: 130px
+  padding-right: 50px
+  background-color: transparent
+  width: 100%
+  overflow-x: auto
+
+  @media(max-width: 1200px)
+    padding-left: 64px
+    padding-right: 64px
+    width: 100% !important
+    overflow-x: hidden !important
+  @media(max-width: 500px)
+    padding-left: 38px
+    padding-right: 38px
+.title
+  font-size: 36px
+  line-height: 110%
+  font-weight: 700
+  color: #24304F
+  @media (max-width: 800px)
+    font-size: 30px
+  @media (max-width: 500px)
+    font-size: 28px
+.titleOffer
+  font-size: 36px
+  line-height: 110%
+  font-weight: 700
+  color: #24304F
+  @media (max-width: 800px)
+    display: none
+.titleMobile
+  display: none
+  font-size: 30px
+  line-height: 110%
+  font-weight: 700
+  color: #24304F
+  @media (max-width: 800px)
+    display: flex
+  @media (max-width: 500px)
+    font-size: 28px
+.headerRow
+  display: flex
+  flex-direction: row
+  align-items: center
+  @media (max-width: 500px)
+    justify-content: center
+    .backButton
+      display: none
+    .title
+      text-align: center
+.titleRowContainer
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  @media (max-width: 500px)
+    flex-direction: column
+    width: 100%
+    align-items: flex-start
+    gap: 20px
+    .addVehicleButton
+      width: 100%
+.rowContainer
+  display: flex
+  flex-direction: row
+  align-items: center
+.buttonsContainer
+  display: flex
+  flex-direction: row
+  align-items: center
+  @media (max-width: 500px)
+    flex-direction: column
+    div
+      width: 100%
+.addVehicleButton
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  padding: 20px 25px
+  gap: 15px
+  cursor: pointer
+  background-color: #2DD792
+  border-radius: 10px
+  p
+    color: #FFFFFF
+    font-size: 14px
+.tableContainer
+  margin-top: 50px
+  background-color: #F1F5FF
+  color: rgba(0, 0, 0, 0.87)
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms
+  border-radius: 4px
+  min-width: 650px
+  width: 100%
+  overflow-x: auto
+  table
+    display: table
+    width: 100%
+    border-collapse: separate
+    border-spacing: 0px 10px
+    min-width: 650px
+    box-shadow: none
+  thead
+    display: table-header-group
+    background-color: #F1F5FF
+    .header
+      font-family: "Roboto","Helvetica","Arial",sans-serif
+      font-weight: 500
+      font-size: 0.875rem
+      line-height: 1.5rem
+      letter-spacing: 0.01071em
+      display: table-cell
+      vertical-align: inherit
+
+      text-align: left
+      padding: 16px
+      color: rgba(0, 0, 0, 0.87)
+  tbody
+    display: table-row-group
+    .bodyTr
+      color: inherit
+      display: table-row
+      vertical-align: middle
+      outline: 0
+      background-color: white
+      border-radius: 100px
+      margin-top: 120px
+      th
+        font-family: "Roboto","Helvetica","Arial",sans-serif
+        font-weight: 400
+        font-size: 0.875rem
+        line-height: 1.43
+        letter-spacing: 0.01071em
+        display: table-cell
+        vertical-align: inherit
+        border-bottom: 1px solid rgba(224, 224, 224, 1)
+        text-align: left
+        padding: 16px
+        color: rgba(0, 0, 0, 0.87)
+.actionItem
+  border-radius: 10px
+  width: 50px
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  &:hover
+    background-color: #EFF4FE
+.mobileItemsRow
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 10px
+  margin-top: 30px
+  margin-bottom: 30px
+  @media (max-width: 500px)
+
+    display: flex
+    flex-direction: column
+    align-items: center
+  //width: 100%
+  //display: flex
+  //flex-direction: row
+  //gap: 20px
+  //overflow-x: auto
+  //padding: 30px 5px
+.backButton
+  display: flex
+  padding: 13px 15px
+  align-items: center
+  flex-direction: row
+  gap: 10px
+  justify-content: center
+  border: 1px solid #BAC4DD
+  border-radius: 10px
+  cursor: pointer
+  p
+    color: #8B97B7
+    text-transform: uppercase
+    font-size: 12px
+  @media (max-width: 500px)
+    p
+      font-size: 11px
+.newVehicleContainer
+  background-color: #FFFFFF
+  border-radius: 10px
+  padding: 60px
+  display: flex
+  flex-direction: column
+  gap: 60px
+  margin-top: 50px
+  .vehicleInputs
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 28px
+  .vehicleDocuments
+    display: flex
+    flex-direction: column
+    gap: 20px
+    .title
+      font-weight: 700
+      font-size: 26px
+      line-height: 110%
+      color: #24304F
+  .pickRow
+    display: flex
+    flex-direction: row
+    align-items: center
+  .documentPickItem
+    max-width: 225px
+    position: relative
+    width: 100%
+    height: 130px
+    border: 1px dashed #A3AEC9
+    border-radius: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 15px
+    cursor: pointer
+    padding: 30px
+    input[type="file"]
+      display: none
+    p
+      color: #566488
+    &:hover
+      p
+        color: #4E7FF1 !important
+      path
+        fill: #4E7FF1
+    @media (max-width: 800px)
+      max-width: 262px
+  @media (max-width: 500px)
+    padding: 30px
+    .vehicleDocuments
+      .title
+        text-align: center
+        font-size: 22px
+    .documentPickItem
+      max-width: 100%
+    .vehicleInputs
+      display: flex
+      flex-direction: column
+    .pickRow
+      flex-direction: column
+    .addVehicleButton
+      width: 100% !important
+
+.custom-file-upload
+  border: 1px solid #ccc
+  display: inline-block
+  padding: 6px 12px
+  cursor: pointer
+
+.detailsContainer
+  background-color: #FFFFFF
+  border-radius: 10px
+  padding: 60px
+  display: flex
+  flex-direction: column
+  gap: 40px
+  .detailsInputs
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 30px
+
+  @media (max-width: 800px)
+    .detailsInputs
+      display: flex
+      flex-direction: column
+  @media (max-width: 500px)
+    padding: 30px
+.submitRow
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  @media (max-width: 500px)
+    flex-direction: column-reverse
+    gap: 20px
+    align-items: flex-start
+    .addVehicleButton
+      width: 100%
+.detailHeader
+  background-color: #FFFFFF
+  display: flex
+  align-items: center
+  justify-content: center
+  border-top-left-radius: 10px
+  border-top-right-radius: 10px
+  max-width: 194px
+  width: 100%
+  cursor: pointer
+  padding: 20px
+  p
+    font-weight: 700
+    font-size: 12px
+  @media (max-width: 800px)
+    max-width: 145px
+  @media (max-width: 500px)
+    max-width: 100%
+
+.profileContainer
+  background-color: #FFFFFF
+  border-radius: 10px
+  border-top-right-radius: 0
+  padding: 60px
+  width: 100%
+  .profileRow
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 200px
+  .profileInputs
+    width: 50%
+    display: flex
+    flex-direction: column
+    gap: 40px
+  .profilePhotoBlock
+    width: max-content
+
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 40px
+    .photo
+      max-width: 218px
+      width: 218px
+      height: 218px
+      border-radius: 200px
+      display: flex
+      align-items: center
+      justify-content: center
+      background-size: contain !important
+      img
+        object-fit: cover
+      p
+        font-size: 60px
+        font-weight: 700
+        color: #FFFFFF
+  @media (max-width: 800px)
+    .profileRow
+      gap: 70px
+    .profileInputs
+      width: 100%
+
+    .profilePhotoBlock
+      width: 100%
+
+      padding: 25px
+      .photo
+        width: 115px
+        height: 115px
+
+  @media (max-width: 500px)
+    padding: 30px
+    .profileRow
+      gap: 35px
+      flex-direction: column-reverse
+    .profilePhotoBlock
+      flex-direction: row
+      justify-content: space-between
+      width: 100%
+      gap: 20px
+      padding: 0
+    .profilePhotoBlock
+      .photo
+        max-width: 66px
+        width: 66px
+        height: 66px
+        p
+          font-size: 25px
+  @media (max-width: 340px)
+    .profilePhotoBlock
+      gap: 10px
+.addPhotoInput
+  display: flex
+  position: relative
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  max-width: 200px
+  width: 100%
+  border: 1px solid #BAC4DD
+  border-radius: 10px
+  padding: 20px
+  p
+    text-transform: uppercase
+    color: #8B97B7
+    font-size: 12px
+    font-weight: 600
+    white-space: nowrap
+  @media (max-width: 500px)
+    max-width: 158px
+    justify-content: center
+    svg
+      display: none
+    padding: 17px
+  @media (max-width: 400px)
+    max-width: 100px
+    p
+      white-space: break-spaces
+      text-align: center
+
+.bookingNavigation
+  margin-top: 35px
+  width: 100%
+  display: flex
+  flex-direction: row
+  gap: 40px
+  border-bottom:  1px solid rgba(0, 0, 0, 0.1)
+  p
+    font-size: 12px
+    padding-bottom: 20px
+    font-weight: 700
+    border-bottom: 3px solid transparent
+    text-transform: uppercase
+    color: #566488
+    cursor: pointer
+  @media (max-width: 800px)
+    display: none
+
+.bookingRowContainer
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  gap: 30px
+  height: max-content
+  margin-bottom: 70px
+  margin-top: 40px
+  @media (max-width: 1200px)
+    gap: 20px
+  @media (max-width: 800px)
+    grid-template-columns: 1fr 1fr
+    gap: 20px
+  @media (max-width: 500px)
+    display: flex
+    flex-direction: column
+    gap: 15px
+    padding-right: 38px
+    padding-left: 38px
+    align-items: center
+
+.payoutsContainer
+  display: flex
+  flex-direction: column
+  gap: 25px

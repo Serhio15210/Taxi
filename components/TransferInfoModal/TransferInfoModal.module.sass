@@ -1,0 +1,133 @@
+.transferInfoContainer
+  background-color: #FFFFFF
+  display: flex
+  max-width: 750px
+  width: 100%
+  flex-direction: column
+  border-radius: 10px
+  max-height: calc(100% - 5px)
+  height: max-content
+  overflow-y: auto
+  .title
+    font-weight: 600
+    font-size: 36px
+    line-height: 120%
+    text-align: left
+    color: #24304F
+  @media (max-width: 500px)
+    padding: 0
+
+    .title
+      font-size: 30px
+.route
+  .from
+    display: flex
+    flex-direction: column
+    gap: 10px
+    .title
+      color: #566488
+  .to
+    color: #566488
+  .firstRoute
+    border-left: 2px solid #4E7FF1
+    padding-left: 22px
+    padding-bottom: 27px
+  .lastRoute
+    padding-left: 22px
+  div
+    position: relative
+    .routeImgTop
+      position: absolute
+      left: -9px
+      top: -5px
+    .routeImgLast
+      position: absolute
+      left: -7px
+      top: -7px
+.firstBlock
+  padding: 50px 65px
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  display: flex
+  flex-direction: column
+  gap: 30px
+  @media (max-width: 500px)
+    padding: 20px
+.secondBlock
+  padding: 50px 65px
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  display: flex
+  flex-direction: column
+  gap: 25px
+  .title
+    font-weight: 600
+    font-size: 22px
+  @media (max-width: 500px)
+    padding: 20px
+    .rowContainer
+      flex-direction: column
+      align-items: flex-start
+.passengerInfo
+  display: flex
+  flex-direction: column
+  gap: 25px
+
+  .countPassengerInfo
+    display: flex
+    flex-direction: row
+    gap: 30px
+    align-items: center
+  .passengerMessage
+    background-color: #EFF4FE
+    padding: 25px
+    display: flex
+    flex-direction: column
+    gap: 15px
+    border-radius: 10px
+    .title
+      font-weight: 600
+      color: #24304F
+      font-size: 16px
+    p
+      color: #566488
+  @media (max-width: 500px)
+    .countPassengerInfo
+      flex-wrap: wrap
+.rowContainer
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.grayButton
+  border: 1px solid #CDD4E9
+  border-radius: 6px
+  padding: 10px 20px
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+  height: 40px
+  position: relative
+  color: #CDD4E9
+  cursor: pointer
+
+  p
+    color: #A3AEC9
+    font-size: 13px
+    font-weight: 600
+    text-align: center
+  @media (max-width: 500px)
+     width: 100%
+.buttonsRow
+  display: flex
+  flex-direction: row
+  gap: 15px
+  padding: 0px 50px 65px
+  @media (max-width: 500px)
+    padding: 20px
+    flex-direction: column
+    width: 100%
+    .grayButton
+      width: 100% !important
+      max-width: 100% !important
+

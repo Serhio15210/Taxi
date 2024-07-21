@@ -1,0 +1,355 @@
+.relativeContainer
+  position: relative
+  width: max-content
+
+  @media (max-width: 800px)
+    margin-bottom: 0
+  @media (max-width: 500px)
+    margin-bottom: 0
+.offerContainer
+  cursor: pointer
+  background-color: #FFFFFF
+  max-width: 340px
+  position: relative
+  width: 100%
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  gap: 20px
+  //height: 100%
+  .offerRoute
+    padding: 20px 30px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    height: 60%
+    .routeTimeRow
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: flex-start
+      width: 100%
+
+      p
+        color: #24304F
+        font-weight: 600
+    .routeInfo
+      margin-top: 20px
+      display: flex
+      flex-direction: row
+      gap: 15px
+      align-items: flex-start
+
+      .route
+        .from
+          display: flex
+          flex-direction: column
+          gap: 10px
+          .title
+            color: #566488
+        .to
+          color: #566488
+        .firstRoute
+          border-left: 2px solid #4E7FF1
+          padding-left: 22px
+          padding-bottom: 27px
+        .lastRoute
+          padding-left: 22px
+        div
+          position: relative
+          .routeImgTop
+            position: absolute
+            left: -9px
+            top: -5px
+          .routeImgLast
+            position: absolute
+            left: -7px
+            top: -7px
+  @media (max-width: 800px)
+    max-width: 310px
+  @media (max-width: 500px)
+    max-width: 360px
+  @media (max-width: 380px)
+    max-width: 320px
+  @media (max-width: 340px)
+    max-width: 280px
+.vehicleInfo
+  display: flex
+  flex-direction: column
+  height: 45%
+  gap: 17px
+  padding: 0px 30px 30px
+  justify-content: space-between
+
+  .extraBlock
+    display: flex
+    flex-direction: column
+    gap: 10px
+.costBlock
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  .cost
+    color: #24304F
+    font-weight: 600
+    font-size: 18px
+.message
+  position: relative
+  .messageCount
+    position: absolute
+    width: 18px
+    height: 15px
+    bottom: 5px
+    right: -5px
+    background-color: #4E7FF1
+    border-radius: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    p
+      color: #FFFFFF
+      font-size: 10px
+.message:hover~.messageText
+  background-color: red
+.messageText
+  position: absolute
+  z-index: 5
+  background-color: #566488
+  padding: 10px 20px 15px
+  color: #FFFFFF
+  bottom: -60px
+  max-width: 322px
+  width: 100%
+  right: 0
+  font-size: 14px
+  display: flex
+  justify-content: center
+  border-radius: 10px
+  @media (max-width: 800px)
+    max-width: 290px
+    font-size: 13px
+    p
+      overflow: hidden
+      text-overflow: ellipsis
+  @media (max-width: 500px)
+    display: none
+    max-width: 330px
+  @media (max-width: 380px)
+   font-size: 12px
+.messageUpcomingText
+  position: absolute
+  z-index: 5
+  background-color: #566488
+  padding: 10px 20px 15px
+  color: #FFFFFF
+  bottom: -50px
+  max-width: 322px
+  width: 100%
+  right: -40px
+  font-size: 14px
+  display: flex
+  justify-content: center
+  border-radius: 10px
+  @media (max-width: 800px)
+    max-width: 290px
+    font-size: 13px
+    right: -30px
+    p
+      overflow: hidden
+      text-overflow: ellipsis
+  @media (max-width: 500px)
+    display: none
+    max-width: 330px
+  @media (max-width: 380px)
+    font-size: 12px
+
+.rowContainer
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.acceptButton
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 12px 24px
+  cursor: pointer
+  background-color: #2DD792
+  border-radius: 10px
+  p
+    color: #FFFFFF
+    font-size: 14px
+  &:hover
+    background-color: #26BC7F
+.call
+  background-color: #2DD792
+  width: 50px
+  height: 50px
+  border-radius: 200px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.transferContainer
+  background-color: #FFFFFF
+  border-radius: 10px
+  margin-top: 45px
+  display: flex
+  flex-direction: row
+
+  min-height: 500px
+  height: 100%
+  .transferTimeTitle
+    font-size: 20px
+    font-weight: 700
+  .transferRouteInfo
+    padding: 43px 54px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    border-right: 1px dashed rgba(163, 174, 201, 0.96)
+  .costCallRow
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+  .costCallRowMobile
+    padding: 0 54px 43px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+  .routeInfo
+    margin-top: 20px
+    display: flex
+    flex-direction: row
+    gap: 15px
+    align-items: flex-start
+    .route
+      .from
+        display: flex
+        flex-direction: column
+        gap: 10px
+        .title
+          color: #566488
+          max-width: 440px
+      .to
+        color: #566488
+      .firstRoute
+        border-left: 2px solid #4E7FF1
+        padding-left: 22px
+        padding-bottom: 27px
+      .lastRoute
+        padding-left: 22px
+      div
+        position: relative
+        .routeImgTop
+          position: absolute
+          left: -9px
+          top: -5px
+        .routeImgLast
+          position: absolute
+          left: -7px
+          top: -7px
+  .passengerInfo
+    display: flex
+    flex-direction: column
+    gap: 25px
+    padding: 43px 54px
+    .countPassengerInfo
+      display: flex
+      flex-direction: row
+      gap: 30px
+      align-items: center
+    .passengerMessage
+      background-color: #EFF4FE
+      padding: 25px
+      display: flex
+      flex-direction: column
+      gap: 15px
+      border-radius: 10px
+      .title
+        font-weight: 600
+        color: #24304F
+      p
+        color: #566488
+  @media (max-width: 800px)
+    flex-direction: column
+    .transferRouteInfo
+      border: none
+      padding-bottom: 0
+    .costCallRow
+      padding: 0 54px 43px
+  @media (max-width: 500px)
+    .transferRouteInfo
+      padding: 30px
+    .passengerInfo
+      padding: 30px
+      .countPassengerInfo
+        flex-direction: column
+        align-items: flex-start
+      .passengerMessage
+        background-color: transparent
+        padding-right: 0
+        padding-left: 0
+    .costCallRowMobile
+      flex-direction: column-reverse
+      align-items: flex-start
+      gap: 20px
+      padding: 0 30px 30px
+
+
+.payoutItemContainer
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  gap: 75px
+  .payoutDate
+    display: flex
+    flex-direction: column
+    gap: 12px
+    .title
+      font-weight: 700
+      font-size: 18px
+      color: #24304F
+    p
+      color: #566488
+  .tablePayoutBlock
+    max-width: 900px
+    width: 100%
+    display: flex
+    flex-direction: column
+    @media (max-width: 800px)
+      max-width: 490px
+  @media (max-width: 1200px)
+    .payoutDate
+      .title
+        white-space: nowrap
+    gap: 40px
+  @media (max-width: 670px)
+    gap: 20px
+  @media (max-width: 600px)
+    flex-direction: column
+    gap: 20px
+    .payoutDate
+      flex-direction: row
+      justify-content: space-between
+      width: 100%
+    .tablePayoutBlock
+      .acceptButton
+        max-width: 100% !important
+
+.headerPayoutMobile
+  background-color: transparent
+  border-radius: 10px
+  padding: 25px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  @media (max-width: 500px)
+    display: none
+.mobileTableContainer
+  display: none
+  @media (max-width: 800px)
+    display: flex

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+<div>
+
+    <div>
+        <p class="title">Link</p>
+        <div class="inputBlock">
+            <div class="inputStartBlock">
+                <p>productname.com/</p>
+            </div>
+            <input class="inputItem" style="width: 210px"/>
+        </div>
+    </div>
+    <div>
+        <p class="title">Welcome Message</p>
+
+        <textarea class="textAreaMessage"></textarea>
+
+    </div>
+    <div>
+        <p class="title">Language</p>
+        <select name="select" class="selectBlock"> <!--Supplement an id here instead of using 'name'-->
+            <option value="value1" selected>English</option>
+            <option value="value2">Українська</option>
+            <option value="value3">Русский</option>
+        </select>
+    </div>
+    <div>
+        <p class="title">Allowed bookings per Day</p>
+        <select name="select" class="selectBlock"> <!--Supplement an id here instead of using 'name'-->
+            <option value="value1">1</option>
+            <option value="value2" selected>2</option>
+            <option value="value3">3</option>
+        </select>
+    </div>
+
+</div>
+<div class="checkRowContainer">
+    <form>
+        <input type="checkbox" class="squareCheckBox">
+
+    </form>
+    <p>Allow Booker to add additional guests</p>
+</div>
+<div class="checkRowContainer">
+    <input type="radio"
+           name="color">
+    <p>Automatically detect and show the times in Bookers time zone</p>
+</div>
+<div class="checkRowContainer">
+    <input type="radio"
+           name="color">
+    <p>Lock the timezone (best for in-person events)</p>
+</div>
+
+<div class="checkRowContainer">
+    <label class="form-switch">
+        <input type="checkbox"> <i></i>
+    </label>
+    <p>Lock the timezone (best for in-person events)</p>
+</div>
+    <input class="selectBlock"/>
+
+</div>
+</body>
+</html>

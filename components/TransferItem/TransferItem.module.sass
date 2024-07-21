@@ -1,0 +1,74 @@
+.itemBlock
+  border-radius: 10px
+  padding: 15px 30px
+  position: relative
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+  align-items: center
+  width: 100%
+  p
+    color: #FFFFFF
+    font-size: 15px
+  .title
+    font-weight: 600
+    font-size: 22px
+    margin-bottom: 5px
+.circleBlock
+  width: 74px
+  height: 74px
+  border: 6px solid #FFFFFF
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+.circleWrap
+  margin: 50px auto
+  width: 150px
+  height: 150px
+  background: #e6e2e7
+  border-radius: 50%
+.circleWrap .circle .mask,
+.circleWrap .circle .fill
+  width: 150px
+  height: 150px
+  position: absolute
+  border-radius: 50%
+.circleWrap .circle .mask
+  clip: rect(0px, 150px, 150px, 75px)
+.circleWrap .circle .mask .fill
+  clip: rect(0px, 75px, 150px, 0px)
+  background-color: white
+
+.circleWrap .circle .mask.full,
+.circleWrap .circle .fill
+  animation: fill ease-in-out 3s
+  transform: rotate(126deg)
+
+
+@keyframes fill
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(126deg)
+
+.circleWrap .insideCircle
+  width: 130px
+  height: 130px
+  border-radius: 50%
+  background: transparent
+  line-height: 130px
+  text-align: center
+  margin-top: 10px
+  margin-left: 10px
+  position: absolute
+  z-index: 100
+  font-weight: 700
+  font-size: 2em
+
+.rowContainer
+  display: flex
+  flex-direction: row
+  align-items: center

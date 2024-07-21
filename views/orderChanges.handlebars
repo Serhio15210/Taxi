@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../loginGmail.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            background-color: #EFF4FE;
+            padding: 148px 220px 30px;
+
+            gap: 40px;
+        }
+
+        .content1 {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 65px 0 0;
+            position: relative;
+            border-radius: 20px;
+            -moz-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            -webkit-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 110%;
+            color: #24304F;
+            margin: auto;
+            padding-right: 65px;
+            padding-left: 65px;
+        }
+        .changedItem{
+            background: #FFFFFF;
+            box-shadow: 2px 2px 6px #9AADDD;
+            transform: rotate(-2deg);
+            color: #2DD792;
+            padding: 5px 10px;
+            width: max-content !important;
+            text-align: right;
+            margin: auto 0 auto auto;
+
+        }
+        .dearText {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: #566488;
+            padding-right: 65px;
+            padding-left: 65px;
+
+        }
+
+        .loginButton {
+            max-width: 231px;
+            cursor: pointer;
+            width: 100%;
+            height: 54px;
+            background: #4E7FF1;
+            box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.27);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin: 40px auto auto;
+
+        }
+
+        .transfer {
+            background: linear-gradient(168.25deg, #E2EAFF 10.82%, #F5F8FF 87.91%);
+
+            border-radius: 15px 15px 0px 0px;
+            padding: 0 30px;
+        }
+
+        .transferTitle {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 160%;
+            color: #24304F;
+            padding-top: 30px;
+            margin-bottom: 22px;
+        }
+
+        .transferDetails {
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .detailItem {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .transferBlock{
+            position: relative;
+            z-index: 5;
+            padding: 0px 65px 0;
+        }
+        .detailItem img {
+            width: 20px;
+            height: 20px;
+            margin: auto auto auto 0;
+        }
+
+        .detailItem p {
+            font-size: 18px;
+            line-height: 160%;
+            width: 100%;
+
+        }
+
+        #price {
+            color: #566488;
+            text-align: left;
+            width: max-content;
+            white-space: nowrap;
+            margin: auto auto auto 0;
+        }
+
+        #cost {
+            color: #24304F;
+            font-weight: 600;
+            text-align: right;
+            font-size: 30px
+        }
+
+        .footerText {
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            color: #8B96B5;
+            margin: 30px auto auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding-right: 38px !important;
+                padding-left: 38px !important;
+                padding-top: 20px !important;
+            }
+            .content1{
+                padding-top: 20px;
+            }
+            .title {
+
+                font-size: 26px;
+                text-align: left;
+                margin: unset;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+
+
+            .transfer {
+                padding: 0 20px;
+            }
+            .transferTitle {
+                font-size: 20px;
+            }
+            .dearText {
+                font-size: 14px;
+                text-align: left;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            .transferBlock {
+                padding: 0px 20px;
+            }
+            #cost{
+                font-size: 20px !important;
+            }
+            #price {
+                margin:auto;
+            }
+            #driverText{
+                width: 100% !important;
+            }
+            .loginButton {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+
+            .detailItem p {
+                font-size: 14px;
+                line-height: 160%;
+                width: 100%;
+            }
+
+            .detailItem img {
+                display: none;
+            }
+
+
+
+            .footerText {
+                font-size: 14px;
+                line-height: 160%;
+                text-align: center;
+                color: #8B96B5;
+                margin: 30px auto auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content1">
+        <p class="title"><span style="color: #4E7FF1">Changes</span> on Ride<br/><span style="text-decoration: underline"> N°124578</span> </p>
+        <p class="dearText"><b>Dear {{name}}</b>,</p>
+        <p class="dearText"> On your request, we changed your transfer details for your ride N°124578. Please quickly take notice of these changes.</p>
+        <div class="transferBlock">
+            <div class="transfer">
+                <p class="transferTitle">Driver details:</p>
+                <div style="width: 100%;height: 2px;background-color: #4E7FF1"></div>
+                <div class="transferDetails">
+                    <div class="detailItem">
+                        <div style="display: flex;flex-direction: row;gap: 10px;align-items: center">
+                            <img src="http://194.163.142.233:3000/driversName.png" style="margin-right: 10px"/>
+                            <p style="color: #566488;text-align: left;width: max-content " id="driverText">Driver’s name:</p>
+                        </div>
+                        <p style="color: #24304F;font-weight: 600;text-align: right;white-space: nowrap">Fabricio</p>
+                    </div>
+                    <div class="detailItem">
+                        <div style="display: flex;flex-direction: row;gap: 10px;align-items: center">
+                            <img src="http://194.163.142.233:3000/driversPhone.png" style="margin-right: 10px"/>
+                            <p style="color: #566488;text-align: left;width: max-content" id="driverText">Driver’s phone:</p>
+                        </div>
+                        <p style="color: #4E7FF1;font-weight: 600;text-align: right;text-decoration: underline;white-space: nowrap">856 996 54 58</p>
+                    </div>
+                    <div class="detailItem">
+                        <div style="display: flex;flex-direction: row;gap: 10px;align-items: center">
+                            <img src="http://194.163.142.233:3000/car.png" style="margin-right: 10px"/>
+                            <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap " id="driverText"> Car:</p>
+                        </div>
+                        <p style="color: #24304F;font-weight: 600;text-align: right;white-space: nowrap ">Classna, AH0305</p>
+                    </div>
+                </div>
+                <p class="transferTitle" style="padding-top: 0">Transfer details:</p>
+                <div style="width: 100%;height: 2px;background-color: #4E7FF1"></div>
+                <div class="transferDetails">
+
+                    <div class="detailItem">
+                        <div style="display: flex;align-items: center;width: 100%;">
+                            <img src="http://194.163.142.233:3000/calendar.png" style="margin-right: 10px"/>
+                            <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap;margin: auto auto auto 0; ">Date:</p>
+                        </div>
+
+                        <div style="margin: auto 0 auto auto;width: 100%"><p class="changedItem">09 July, 17:44</p></div>
+                    </div>
+                    <div class="detailItem">
+                        <div style="display: flex;align-items: center;">
+                            <img src="http://194.163.142.233:3000/pickup.png" style="margin-right: 10px"/>
+                            <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap ">Pickup:</p>
+                        </div>
+                        <div style="margin: auto 0 auto auto;width: 100%"><p style="color: #24304F;font-weight: 600;text-align: right;margin: auto 0 auto auto; ">Nice Côte d'Azur Airport</p></div>
+                    </div>
+                    <div class="detailItem">
+                        <div style="display: flex;align-items: center;">
+                            <img src="http://194.163.142.233:3000/dropdown.png" style="margin-right: 10px"/>
+                        </div>
+                        <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap ">Dropoff:</p>
+                        <div style="margin: auto 0 auto auto;width: 100%"><p style="color: #24304F;font-weight: 600;text-align: right;margin: auto 0 auto auto; ">Cannes</p></div>
+                    </div>
+
+                    <div class="detailItem">
+                        <div style="display: flex;align-items: center;">
+                            <img src="http://194.163.142.233:3000/passengers.png" style="margin-right: 10px"/>
+                            <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap ">
+                                Passengers:</p>
+                        </div>
+                        <div style="margin: auto 0 auto auto;width: 100%"><p class="changedItem">1</p></div>
+                    </div>
+                    <div class="detailItem">
+                        <div style="display: flex;align-items: center;">
+                            <img src="http://194.163.142.233:3000/luggages.png" style="margin-right: 10px"/>
+                            <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap ">Luggages:</p>
+                        </div>
+                        <div style="margin: auto 0 auto auto;width: 100%"><p style="color: #24304F;font-weight: 600;text-align: right;margin: auto 0 auto auto; ">0</p></div>
+                    </div>
+                    <div class="detailItem">
+                        <div style="display: flex;align-items: center;">
+                            <img src="http://194.163.142.233:3000/carType.png" style="margin-right: 10px"/>
+                            <p style="color: #566488;text-align: left;width: max-content;white-space: nowrap ">Car type:</p>
+                        </div>
+                        <div style="margin: auto 0 auto auto;width: 100%"><p style="color: #24304F;font-weight: 600;text-align: right;margin: auto 0 auto auto; ">VIP</p></div>
+                    </div>
+                    <div class="detailItem" style="margin-top: 15px">
+                        <div style="display: flex;align-items: center;">
+                            <img src="http://194.163.142.233:3000/price.png" style="margin-right: 10px"/>
+                            <p id="price">Price:</p>
+                        </div>
+                        <div style="margin: auto 0 auto auto;width: 100%"><p id="cost" style="margin: auto 0 auto auto;">€85.00</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="http://194.163.142.233:3000/orderChanges.png" width="100%"  />
+    </div>
+
+
+    <p class="footerText">Made with ❤<br/> This is an automated email - please do not reply to it.</p>
+</div>
+</body>
+</html>

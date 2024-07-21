@@ -1,0 +1,103 @@
+.wrapper
+
+  background-color: #F1F5FF
+  max-width: 100vw
+  min-height: 100vh
+  position: relative
+
+.navbar
+  position: fixed
+  left: 0
+  //background: url('/adminNavBarBg.png') 100%
+  background-size: cover
+  background: #4E7FF1
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06)
+  border-radius: 0px 40px 40px 0px
+  z-index: 10
+  width: 230px
+  padding: 30px 15px
+  padding-right: 0
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  .closeButton
+    color: #FFFFFF
+    font-size: 30px
+    margin-top: 10px
+    display: none
+  @media (max-width: 1200px)
+    transition: .3s linear
+    transform: translateX(-100%)
+    &.active
+      transform: translateX(0)
+      .closeButton
+        display: block
+.logoBlock
+  display: flex
+  flex-direction: row
+  gap: 10px
+  cursor: pointer
+  margin-bottom: 20px
+  width: 100%
+  z-index: 2
+  .logoText1
+    color: white
+    font-weight: 700
+    font-size: 20px
+  .logoText2
+    color: #2DD792
+    font-weight: 700
+    font-size: 20px
+  @media (max-width: 1200px)
+    width: max-content
+.navItem
+  display: flex
+  flex-direction: row
+  gap: 15px
+  z-index: 3
+  width: 100%
+  border-radius: 50px 0 0 50px
+  cursor: pointer
+  align-items: center
+  padding: 10px
+  position: relative
+  p
+    color: white
+    font-weight: 600
+    font-size: 14px
+  .navItemImg
+    border-radius: 10px
+    background: rgba(0, 0, 0, 0.1)
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 35px
+    height: 35px
+    img
+      width: 14px
+      height: 14px
+  &.active
+    //background: rgba(0, 0, 0, 0.1)
+    background: #F1F5FF
+    &::before,&::after
+      content: ''
+      position: absolute
+      width: 10px
+      height: 10px
+      right: 0
+      background: transparent
+      border-radius: 50%
+    &::before
+      top: -10px
+      box-shadow: 5px 5px 0 5px #F1F5FF
+      border-radius: 0 0 100vw 0
+    &::after
+      bottom: -10px
+      box-shadow: 5px -5px 0 5px #F1F5FF
+      border-radius: 0 100vw 0 0
+
+    p
+      color: #4E7FF1
+    .navItemImg
+      background: #2DD791

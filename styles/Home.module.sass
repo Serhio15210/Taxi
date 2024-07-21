@@ -1,0 +1,1207 @@
+.fadeContainer
+  opacity: 1
+  animation: blockAnimation linear forwards
+  animation-timeline: view()
+  animation-range: exit
+@keyframes blockAnimation
+  25%
+    opacity: 1
+    scale: 1
+    //background: green
+  80%
+    scale: 0.8
+    //background: yellow
+  100%
+    opacity: 0
+    scale: 0.5
+    background: white
+
+
+
+.terms
+  display: flex
+  flex-direction: row
+  gap: 5px
+  font-size: 14px
+  p
+    color: #4E7FF1
+    text-decoration: underline
+    cursor: pointer
+.headerText
+  display: flex
+  font-size: 18px
+  line-height: 28px
+  margin-top: 70px
+  flex-direction: row
+  color: #566488
+  justify-content: space-between
+  @media (max-width: 1100px)
+    flex-direction: column
+.offerContainer
+  display: flex
+  flex-direction: column
+  gap: 30px
+  margin-top: 115px
+  .title
+
+    gap: 15px
+    font-size: 50px
+    font-weight: 700
+    word-break: break-word
+    span
+      position: relative
+      z-index: 3
+      word-break: keep-all
+      white-space: nowrap
+    span:before
+      z-index: -1
+      content: ''
+      display: block
+      position: absolute
+      bottom: 10px
+      left: 0
+      right: 0
+      background-color: #FFD601
+      max-width: 400px
+      width: 100%
+      height: 15px
+    @media (max-width: 550px)
+      span:before
+        bottom: 5px
+        height: 10px
+  .text
+    font-size: 18px
+    color: #566488
+  @media (max-width: 800px)
+    .title
+      font-size: 45px
+  @media (max-width: 500px)
+    .title
+      font-size: 30px
+  .offersBlock
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 40px
+    margin-top: 60px
+
+    .offerItem
+      display: flex
+      flex-direction: row
+      gap: 33px
+      margin-bottom: 80px
+      max-width: 360px
+      width: 100%
+      .offerImg
+        background-color: #4E7FF1
+        box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.4)
+        border-radius: 10px
+        display: flex
+        align-items: center
+        color: white
+        max-width: 60px
+        width: 100%
+        height: 60px
+        justify-content: center
+        p
+          margin: 0
+          font-size: 18px
+      .offerText
+        display: flex
+        flex-direction: column
+        gap: 10px
+        p
+          font-size: 22px
+          font-weight: 700
+          max-width: 266px
+          width: 100%
+        span
+          font-size: 18px
+          color: #566488
+          max-width: 266px
+          width: 100%
+          line-height: 28px
+    @media (max-width: 800px)
+      display: grid
+      grid-template-columns: 1fr 1fr
+      .offerItem
+        .offerText
+          p
+            font-size: 18px
+            font-weight: 700
+            max-width: 266px
+            width: 100%
+          span
+            font-size: 15px
+            color: #566488
+            max-width: 266px
+            width: 100%
+            line-height: 28px
+    @media (max-width: 550px)
+      display: flex
+      flex-direction: column
+      gap: 30px
+      .offerItem
+        margin-bottom: 0
+.bookingContainer
+  width: 100%
+  align-items: center
+  justify-content: center
+  background: linear-gradient(180deg, #F0F5FF 0%, rgba(240, 245, 255, 0) 100%)
+  max-width: 1920px
+  .bookingBlock
+    padding: 0 140px
+    position: relative
+    max-width: 1440px
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    display: flex
+    gap: 30px
+    margin: 70px auto 0
+    @media (max-width: 1100px)
+      padding: 0 64px
+    @media (max-width: 500px)
+      padding: 0 38px
+  .title
+    margin-top: 50px
+    font-size: 50px
+    font-weight: 700
+    word-break: break-word
+    span
+      position: relative
+      z-index: 3
+      word-break: keep-all
+      white-space: nowrap
+    span:before
+      z-index: -1
+      content: ''
+      display: block
+      position: absolute
+      bottom: 10px
+      left: 0
+      right: 0
+      background-color: #FFD601
+      max-width: 400px
+      width: 100%
+      height: 15px
+    @media (max-width: 1100px)
+      font-size: 45px
+    @media (max-width: 500px)
+      font-size: 30px
+      span:before
+        bottom: 5px
+        height: 10px
+  .text
+    font-size: 18px
+    color: #566488
+    margin-top: 27px
+    text-align: center
+    max-width: 778px
+    width: 100%
+.bookingRow
+  display: flex
+  flex-direction: row
+  margin-top: 35px
+  align-items: center
+  gap: 40px
+  justify-content: center
+  @media (max-width: 700px)
+    flex-direction: column
+.bookingItem
+  padding: 40px
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 30px
+  border-radius: 20px
+  border: 1px dashed rgba(86, 100, 136, 0.5)
+  height: 150px
+  .bookingNumber
+    background: #4E7FF1
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50px
+    max-width: 55px
+    width: 100%
+    max-height: 55px
+    height: 100%
+    p
+      margin: 0
+      color: white
+      font-weight: bold
+      font-size: 18px
+  .bookingText
+    color: #566488
+    max-width: 395px
+    width: 100%
+    font-size: 18px
+  @media (max-width: 1000px)
+    .bookingText
+      font-size: 16px
+  @media (max-width: 800px)
+    height: 218px
+    flex-direction: column
+    align-items: flex-start
+    .bookingNumber
+      margin-top: -70px
+    .bookingText
+      font-size: 18px
+  @media (max-width: 600px)
+    max-height: 158px
+    height: 100%
+    padding: 30px
+    .bookingNumber
+      position: absolute
+      margin-top: -50px
+      height: 40px
+      width: 40px
+    .bookingText
+      font-size: 15px
+  @media (max-width: 375px)
+    .bookingNumber
+      position: absolute
+      height: 40px
+      width: 40px
+.bookingMap
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  width: 100%
+  max-width: 1400px
+  margin: 0 auto
+  padding: 0 120px
+  @media (max-width: 1100px)
+    flex-direction: column-reverse
+    img
+      max-width: 100% !important
+      margin-left: 0 !important
+    padding: 0 64px
+  @media (max-width: 800px)
+    img
+      display: none
+  @media (max-width: 500px)
+    img
+      max-width: 100% !important
+      margin-top: -150px !important
+    padding: 0 38px
+.mapMobile
+  margin-top: -250px
+  width: 100%
+  @media (max-width: 500px)
+    margin-top: -150px
+  @media (max-width: 350px)
+    margin-top: -100px
+.bookingInfo
+  width: 100%
+  margin-top: 117px
+  display: flex
+  flex-direction: column
+  gap: 37px
+  p
+    color: #566488
+    font-size: 18px
+    line-height: 28px
+  .bookingBoldText
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    gap: 33px
+    p
+      font-size: 26px
+      line-height: 39px
+  @media (max-width: 600px)
+    margin-top: 30px
+    margin-bottom: 40px
+    p
+    color: #566488
+    font-size: 15px
+    line-height: 24px
+    .bookingBoldText
+      p
+        font-size: 21px
+        line-height: 30px
+
+
+.map
+  display: flex
+  background: url("/map.png")
+  max-width: 560px
+  height: 500px
+  width: 100%
+
+.bookingPayment
+  background-color: #FFFFFF
+  box-shadow: 0px 10px 40px rgba(86, 100, 136, 0.18)
+  border-radius: 10px
+  max-width: 241px
+  width: 100%
+  padding: 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 15px
+  text-align: center
+  height: 313px
+  .routesText
+    display: flex
+    flex-direction: column
+    gap: 10px
+    color: #566488
+    font-size: 14px
+  .bookingTotal
+    display: flex
+    flex-direction: row
+    gap: 10px
+    p
+      font-size: 16px
+      font-weight: 700
+  .paymentButton
+    background-color: #4E7FF1
+    box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.13)
+    border-radius: 8px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 11px 26px
+    margin-top: 10px
+    p
+      color: white
+      margin: auto
+      font-size: 12px
+
+.priceContainer
+  display: flex
+  flex-direction: column
+  gap: 30px
+  width: 100%
+  max-width: 1400px
+  padding: 0 0 0 120px
+  margin: 0 auto
+  .title
+    font-size: 50px
+    font-weight: 700
+    max-width: 860px
+    width: 100%
+    word-break: break-word
+    span
+      position: relative
+      z-index: 3
+      word-break: keep-all
+      white-space: nowrap
+    span:before
+      z-index: -1
+      content: ''
+      display: block
+      position: absolute
+      bottom: 10px
+      left: 0
+      right: 0
+      background-color: #FFD601
+      max-width: 400px
+      width: 100%
+      height: 15px
+    @media (max-width: 800px)
+      font-size: 45px
+    @media (max-width: 550px)
+      font-size: 30px
+      span:before
+        bottom: 5px
+        height: 10px
+  .prices
+    position: absolute
+    right: 0px
+    font-size: 200px
+    font-weight: 800
+    color: #F0F5FF
+    text-transform: uppercase
+    margin-top: -70px
+    z-index: -1
+    @media (max-width: 800px)
+      display: none
+  .text
+    max-width: 860px
+    width: 100%
+    font-size: 18px
+    line-height: 28.8px
+    color: #566488
+  @media (max-width: 1100px)
+    .title
+      font-size: 45px
+    padding: 0 64px
+  @media (max-width: 500px)
+    .title
+      font-size: 30px
+    padding: 0 38px
+    .text
+      max-width: 100%
+.townSlider
+  margin: 40px auto 0 180px
+  display: flex
+  flex-direction: row
+.slider
+  width: 100%
+  display: flex
+  flex-direction: row
+  gap: 40px
+
+  padding-left: 140px
+  margin-top: 40px
+  background: red
+  overflow-x: scroll
+  scroll-snap-type: x mandatory
+  scroll-behavior: smooth
+  transition: all 0.5s ease-in-out
+  &.next
+    transform: translateX(260px)
+  &.prev
+    transform: translateX(-260px)
+  @media (max-width: 1100px)
+    padding-left: 64px
+  @media (max-width: 800px)
+    padding-left: 0px
+  .slider_box
+    width: 260px
+    max-width: 260px
+    border-radius: 15px
+    position: relative
+    height: 400px
+    scroll-snap-align: center
+    img
+      width: 260px
+      max-width: 260px
+      height: 400px
+      object-fit: cover
+      border-radius: 15px
+    .itemPrice
+      position: absolute
+      bottom: 73px
+      left: 0
+      background-color: #FFD601
+      border-top-right-radius: 30px
+      border-bottom-right-radius: 30px
+      height: 45px
+      width: 93px
+      align-items: center
+      display: flex
+      justify-content: center
+      font-weight: 600
+    .item_road
+      color: #FFFFFF
+      font-weight: 700
+      font-size: 19px
+      display: flex
+      flex-direction: row
+      position: absolute
+      bottom: 32px
+      left: 28px
+    .hoverItem
+      display: none
+    &:hover
+      .hoverItem
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50px
+        width: 52px
+        height: 52px
+        background-color: white
+        position: absolute
+        top: 10px
+        right: 10px
+  @media (max-width: 800px)
+    margin-left: 64px
+  @media (max-width: 500px)
+    margin-left: 38px
+.sliderItem
+  height: 400px
+  //min-width: 260px
+  min-width: 260px
+  background-size: contain
+  display: flex
+  align-items: flex-end
+.slider::-webkit-scrollbar
+  display: none
+.sliderButtons
+  display: flex
+  flex-direction: row
+  gap: 20px
+  button
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 52px
+    height: 52px
+    background-color: #FFFFFF
+    border: 2px solid #3CE894
+    border-radius: 50px
+    color: #3CE894
+    cursor: pointer
+    transition: all 0.2s ease
+    &:hover
+      background-color: #3CE894
+      color: #FFFFFF
+
+  @media (max-width: 800px)
+    display: none
+
+.hideButtons
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding-right: 120px
+  @media (max-width: 800px)
+    padding: 0
+.transferBlock
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 40px
+
+  .transferInfo
+    display: flex
+    flex-direction: column
+    gap: 30px
+    align-self: flex-end
+    float: left
+    .title
+    font-size: 50px
+    font-weight: 700
+    max-width: 860px
+    width: 100%
+    word-break: break-word
+    span
+      position: relative
+      z-index: 3
+      word-break: keep-all
+      white-space: nowrap
+    span:before
+      z-index: -1
+      content: ''
+      display: block
+      position: absolute
+      bottom: 10px
+      left: 0
+      right: 0
+      background-color: #FFD601
+      max-width: 400px
+      width: 100%
+      height: 15px
+    @media (max-width: 800px)
+      font-size: 45px
+    @media (max-width: 550px)
+      font-size: 30px
+      span:before
+        bottom: 5px
+        height: 10px
+    .text
+      font-size: 18px
+      color: #566488
+      line-height: 28px
+  @media (max-width: 1100px)
+    flex-direction: column
+    margin-top: 70px
+    gap: 0
+    img
+      width: 100% !important
+      height: 100% !important
+  @media (max-width: 800px)
+    .transferInfo
+      .text
+        font-size: 15px
+        line-height: 24px
+
+.missBlock
+  display: flex
+  flex-direction: row
+  gap: 80px
+  margin-top: 60px
+  position: relative
+  .events
+    position: absolute
+    font-size: 200px
+    z-index: -2
+    line-height: 220px
+    text-transform: uppercase
+    color: #F0F5FF
+    font-weight: 800
+    max-width: 1440px
+    width: max-content
+    top: -50px
+    right: -140px
+    text-align: center
+  .missInfo
+    display: flex
+    flex-direction: column
+    gap: 30px
+    align-self: flex-end
+    float: left
+    .title
+      font-size: 50px
+      font-weight: 700
+      max-width: 860px
+      width: 100%
+      word-break: break-word
+    span
+      position: relative
+      z-index: 3
+      word-break: keep-all
+      white-space: nowrap
+    span:before
+      z-index: -1
+      content: ''
+      display: block
+      position: absolute
+      bottom: 10px
+      left: 0
+      right: 0
+      background-color: #FFD601
+      max-width: 400px
+      width: 100%
+      height: 15px
+    @media (max-width: 800px)
+      .title
+        font-size: 45px
+    @media (max-width: 500px)
+      .title
+        font-size: 30px
+      span:before
+        bottom: 5px
+        height: 10px
+    .text
+      font-size: 18px
+      color: #566488
+      line-height: 28px
+  @media (max-width: 1100px)
+    flex-direction: column-reverse
+    align-items: center
+    margin-top: 70px
+    gap: 50px
+    .events
+      right: 0
+      width: 100%
+      display: none
+
+    img
+      width: 100% !important
+      height: 100% !important
+  @media (max-width: 800px)
+    .missInfo
+      .text
+        font-size: 15px
+        line-height: 24px
+
+.missItemsBlock
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 30px
+  margin-top: 115px
+  .item
+    display: flex
+    flex-direction: row
+    gap: 33px
+    margin-bottom: 80px
+    max-width: 560px
+    width: 100%
+    .itemImg
+      background-color: #E2EBFF
+      box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.4)
+      border-radius: 10px
+      display: flex
+      align-items: center
+      color: white
+      max-width: 60px
+      width: 100%
+      height: 60px
+      justify-content: center
+      p
+        margin: 0
+        font-size: 18px
+    .itemText
+      display: flex
+      flex-direction: column
+      gap: 10px
+      p
+        font-size: 22px
+        font-weight: 700
+        max-width: 466px
+        width: 100%
+      span
+        font-size: 18px
+        color: #566488
+        max-width: 466px
+        width: 100%
+        line-height: 28px
+  @media (max-width: 800px)
+    grid-template-columns: 1fr
+    .item
+      max-width: 100%
+      .itemText
+        p
+          max-width: 100%
+        span
+          font-size: 15px
+          max-width: 100%
+.wantText
+  text-align: center
+  margin-top: 48px
+  font-size: 26px
+  @media (max-width: 500px)
+    font-size: 21px
+.benefitsContainer
+  width: 100%
+  align-items: center
+  justify-content: center
+  background: linear-gradient(180deg, #F0F5FF 0%, rgba(240, 245, 255, 0) 100%)
+  max-width: 1920px
+
+  .benefitsBlock
+    padding: 0 140px 120px
+    position: relative
+    max-width: 1440px
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    display: flex
+    gap: 83px
+    margin: 70px auto 0
+    @media (max-width: 1100px)
+      padding: 0 64px
+    @media (max-width: 500px)
+      padding: 0 38px
+    .benefitInfoBlock
+      display: flex
+      flex-direction: row
+      gap: 60px
+      margin-top: 100px
+      .benefitInfoText
+        display: flex
+        flex-direction: column
+        gap: 30px
+        align-self: center
+        float: left
+      .title
+        font-size: 50px
+        font-weight: 700
+        max-width: 860px
+        width: 100%
+        word-break: break-word
+      span
+        position: relative
+        z-index: 3
+        word-break: keep-all
+        white-space: nowrap
+      span:before
+        z-index: -1
+        content: ''
+        display: block
+        position: absolute
+        bottom: 10px
+        left: 0
+        right: 0
+        background-color: #FFD601
+        max-width: 400px
+        width: 100%
+        height: 15px
+      @media (max-width: 800px)
+        font-size: 45px
+      @media (max-width: 550px)
+        font-size: 30px
+        span:before
+          bottom: 5px
+          height: 10px
+      .text
+        font-size: 18px
+        color: #566488
+        line-height: 28px
+        margin-bottom: 8px
+      .boldText
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        gap: 33px
+        p
+          font-size: 26px
+          line-height: 39px
+      @media (max-width: 1100px)
+        flex-direction: column
+        align-items: center
+        margin-top: 70px
+        gap: 50px
+        .benefitInfoText
+          .title
+            font-size: 45px
+        img
+          width: 100% !important
+          height: 100% !important
+      @media (max-width: 500px)
+        .benefitInfoText
+          .title
+            font-size: 30px
+          .text
+            font-size: 15px
+            line-height: 24px
+          .boldText
+            p
+              font-size: 21px
+              line-height: 30px
+
+.benefitsItemsBlock
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 30px
+  margin-top: 115px
+  .item
+    display: flex
+    flex-direction: row
+    gap: 33px
+    margin-bottom: 80px
+    max-width: 560px
+    width: 100%
+    .itemImg
+      background-color: #4E7FF1
+      box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.4)
+      border-radius: 10px
+      display: flex
+      align-items: center
+      color: white
+      max-width: 60px
+      padding: 20px
+      width: 100%
+      height: 60px
+      justify-content: center
+      p
+        margin: 0
+        font-size: 18px
+    .itemText
+      display: flex
+      flex-direction: column
+      gap: 10px
+      p
+        font-size: 22px
+        font-weight: 700
+        max-width: 466px
+        width: 100%
+      span
+        font-size: 18px
+        color: #566488
+        max-width: 466px
+        width: 100%
+        line-height: 28px
+  @media (max-width: 800px)
+    grid-template-columns: 1fr
+    .item
+      max-width: 100%
+      .itemText
+        p
+          max-width: 100%
+        span
+          font-size: 15px
+          max-width: 100%
+
+
+
+.speaksBlock
+  display: flex
+  flex-direction: row
+  gap: 60px
+  margin-top: 60px
+  .infoText
+    display: flex
+    flex-direction: column
+    gap: 30px
+    align-self: center
+    float: left
+  .title
+    font-size: 50px
+    font-weight: 700
+    max-width: 860px
+    width: 100%
+    word-break: break-word
+  span
+    position: relative
+    z-index: 3
+    word-break: keep-all
+    white-space: nowrap
+  span:before
+    z-index: -1
+    content: ''
+    display: block
+    position: absolute
+    bottom: 10px
+    left: 0
+    right: 0
+    background-color: #FFD601
+    max-width: 400px
+    width: 100%
+    height: 15px
+  @media (max-width: 800px)
+    font-size: 45px
+  @media (max-width: 550px)
+    font-size: 30px
+    span:before
+      bottom: 5px
+      height: 10px
+  .text
+    font-size: 18px
+    color: #566488
+    line-height: 28px
+    margin-bottom: 8px
+
+  @media (max-width: 1100px)
+    flex-direction: column
+    align-items: center
+    margin-top: 70px
+    gap: 50px
+    .title
+      font-size: 45px
+    img
+      width: 100% !important
+      height: 100% !important
+  @media (max-width: 500px)
+    .title
+      font-size: 30px
+    .text
+      font-size: 15px
+      line-height: 24px
+.reviewContainer
+  width: 100%
+
+  align-items: center
+
+  background: linear-gradient(360deg, #F0F5FF 0%, rgba(240, 245, 255, 0) 100%)
+
+  max-width: 1920px
+
+  .reviewBlock
+    padding: 0 140px 120px
+    position: relative
+    max-width: 1440px
+    align-items: center
+    justify-content: center
+    width: 100%
+    display: flex
+    flex-direction: row
+    gap: 117px
+    margin: 70px auto 0
+    .polygon
+      position: absolute
+      bottom: -50px
+    .commasShow
+      display: none
+      @media (max-width: 800px)
+        display: flex
+        position: absolute
+        right: 0
+        z-index: -1
+        top: 20px
+    .commas
+      position: absolute
+      top: -20px
+      right: -200px
+      z-index: -1
+    .nav
+      display: flex
+      flex-direction: column
+      gap: 40px
+      position: relative
+
+      align-self: flex-start
+    .title
+      font-size: 50px
+      font-weight: 700
+      max-width: 860px
+      width: max-content
+      align-self: flex-start
+      word-break: break-word
+      position: relative
+      span
+        position: relative
+        z-index: 3
+        word-break: keep-all
+        white-space: nowrap
+      span:before
+        z-index: -1
+        content: ''
+        display: block
+        position: absolute
+        bottom: 10px
+        left: 0
+        right: 0
+        background-color: #FFD601
+        max-width: 400px
+        width: 100%
+        height: 15px
+      @media (max-width: 800px)
+        font-size: 45px
+      @media (max-width: 550px)
+        font-size: 30px
+        span:before
+          bottom: 5px
+          height: 10px
+    .reviewSlider
+      display: flex
+      flex-direction: row
+      gap: 40px
+      overflow-x: auto
+      margin-top: 40px
+      padding: 10px 15px
+
+
+    .slider_review
+      width: 360px
+      min-width: 360px
+      max-width: 360px
+      border-radius: 15px
+      display: flex
+      flex-direction: column
+      gap: 92px
+      padding: 35px
+      background-color: white
+      box-shadow: -10px 10px 10px rgba(125, 136, 164, 0.13)
+      height: 488px
+      .text
+        color: #566488
+        font-size: 18px
+        line-height: 28.8px
+        display: -webkit-box
+        -webkit-line-clamp: 8 /* Число отображаемых строк */
+        -webkit-box-orient: vertical
+        word-wrap: break-word
+        text-overflow: ellipsis
+        overflow: hidden
+      .textMore
+        color: #566488
+        font-size: 18px
+        line-height: 28.8px
+      .item_rate
+        display: flex
+        flex-direction: row
+        align-items: center
+        gap: 20px
+      .reviewName
+        font-size: 18px
+        font-weight: 600
+    @media (max-width: 800px)
+      flex-direction: column
+      padding: 0 64px 64px
+      gap: 40px
+      .nav
+        width: 100%
+      .commas
+        display: none
+      .reviewSlider
+        margin-top: 0
+        width: 100%
+    @media (max-width: 500px)
+      padding: 0 38px 70px
+      .slider_review
+        min-width: 100%
+        width: 100%
+        display: flex !important
+        justify-content: space-between
+        box-shadow: none
+        .text
+          font-size: 15px
+        .textMore
+          font-size: 15px
+        .reviewName
+          font-size: 16px
+.reviewSlider::-webkit-scrollbar
+  display: none
+.eventsShow
+
+  font-size: 200px
+  z-index: -2
+  line-height: 220px
+  text-transform: uppercase
+  color: #F0F5FF
+  font-weight: 800
+  position: absolute
+  width: 100%
+  @media (max-width: 900px)
+    font-size: 150px
+    text-align: center
+
+.guestionsContainder
+  display: flex
+  flex-direction: row
+  gap: 0px
+  margin-top: 60px
+  width: 100%
+  position: relative
+  .infoText
+    display: flex
+    flex-direction: column
+    gap: 30px
+    align-self: center
+    float: left
+  .title
+    font-size: 50px
+    font-weight: 700
+    max-width: 860px
+    width: 100%
+    word-break: break-word
+  span
+    position: relative
+    z-index: 3
+    word-break: keep-all
+    white-space: nowrap
+  span:before
+    z-index: -1
+    content: ''
+    display: block
+    position: absolute
+    bottom: 10px
+    left: 0
+    right: 0
+    background-color: #FFD601
+    max-width: 400px
+    width: 100%
+    height: 15px
+  @media (max-width: 800px)
+    .title
+      font-size: 45px
+  @media (max-width: 550px)
+    .title
+      font-size: 30px
+    span:before
+      bottom: 5px
+      height: 10px
+  .text
+    font-size: 18px
+    color: #566488
+    line-height: 28px
+    margin-bottom: 8px
+  .buttonsRow
+    display: flex
+    flex-direction: row
+    gap: 20px
+  .questionButton
+    border-radius: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #FFFFFF
+    font-size: 14px
+    padding: 17px 34px
+    p
+      display: flex
+      align-items: center
+  @media (max-width: 1100px)
+    flex-direction: column
+    img
+      width: 100% !important
+      height: 100% !important
+    .questionButton
+      img
+        width: 30px !important
+        height: 30px !important
+  @media (max-width: 800px)
+    .buttonsRow
+      flex-direction: column
+    .questionButton
+      height: 55px

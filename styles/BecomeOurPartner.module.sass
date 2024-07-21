@@ -1,0 +1,131 @@
+.wrapper
+  background-color: #F1F5FF
+  width: 100%
+  height: 100%
+  @media (max-width: 800px)
+    background-color: white
+.container
+  width: 100%
+  max-width: 1400px
+  margin: 0 auto
+  padding: 0 120px
+  @media (max-width: 1100px)
+    padding: 0 64px
+  @media (max-width: 800px)
+    padding: 0
+
+
+.formContainer
+  background-color: #FFFFFF
+  display: flex
+  border-radius: 10px
+  border-top: 8px solid #2DD792
+  flex-direction: column
+  padding: 55px 65px
+  position: relative
+  top: -130px
+  gap: 50px
+  .formBlock
+    display: flex
+    flex-direction: column
+    gap: 30px
+  .formTitle
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 17px
+    p
+      font-weight: 700
+      font-size: 22px
+      line-height: 160%
+      color: #24304F
+    .formNumber
+      background-color: #2DD792
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #FFFFFF
+      border-radius: 50px
+      max-width: 33px
+      width: 100%
+      height: 33px
+      p
+        font-size: 18px
+        font-weight: 700
+        color: #FFFFFF
+  @media (max-width: 800px)
+    display: flex
+    top: 0
+    border-top: none
+    max-width: 100%
+  @media (max-width: 500px)
+    padding: 40px
+    .formTitle
+      p
+        font-size: 20px
+.inputsBlock
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 40px
+  @media (max-width: 500px)
+    display: flex
+    flex-direction: column
+.submitBlock
+  display: flex
+  flex-direction: column
+  gap: 30px
+  p
+    color: #566488
+    font-size: 14px
+.submitButton
+  background-color: #2DD792
+  display: flex
+  width: 50%
+  align-items: center
+  flex-direction: row
+  gap: 15px
+  justify-content: center
+  cursor: pointer
+  padding: 15px
+  border-radius: 10px
+  p
+    color: #FFFFFF
+  @media (max-width: 500px)
+    width: 100%
+.loginHideBlock
+  flex-direction: row
+  gap: 30px
+  align-items: center
+  display: none
+  p
+
+    color: #566488
+    font-size: 16px
+    line-height: 160%
+  .loginHideButton
+    background: #4E7FF1
+    max-width: 146px
+    width: 100%
+    padding: 15px 50px
+    box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.19)
+    border-radius: 10px
+    display: flex
+    gap: 15px
+    align-items: center
+    cursor: pointer
+    justify-content: center
+    p
+      font-weight: 600
+      color: white
+      font-size: 14px
+      line-height: 21px
+  @media (max-width: 800px)
+    display: flex
+  @media (max-width: 500px)
+    width: 100%
+    justify-content: space-between
+  @media (max-width: 380px)
+    p
+      white-space: nowrap
+    justify-content: center
+    gap: 10px

@@ -1,0 +1,40 @@
+.itemContainer
+  background-color: white
+  border-radius: 10px
+  padding: 30px 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 30px
+  width: 310px
+  min-width: 310px
+  .itemRow
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 25px
+    width: 100%
+    .itemInfo
+      text-align: right
+      width: 40%
+      color: #A3AEC9
+      font-size: 12px
+      font-weight: 700
+    .itemText
+      width: 50%
+      white-space: nowrap
+      color: #566488
+      overflow: hidden
+      text-overflow: ellipsis
+  .actionItem
+    border-radius: 10px
+    width: 50px
+    height: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #EFF4FE
+  @media (max-width: 500px)
+    width: 100%
+    max-width: 100%
+    min-width: 100%

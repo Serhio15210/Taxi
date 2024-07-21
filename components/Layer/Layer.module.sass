@@ -1,0 +1,212 @@
+.wrapper
+  position: fixed
+  top: 0
+  right: 0
+  height: 100vh
+  width: 100%
+  background: transparent
+  display: none
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  z-index: 7
+  gap: 40px
+  clip-path: circle(25px at calc(100% - 30px) 20px)
+  transition: all 0.3s ease-in-out
+  &.active
+    background: #2DD490
+    clip-path: circle(75%)
+  p
+    font-size: 16px
+    color: white
+    border-bottom: 3px solid transparent
+    padding-bottom: 10px
+    cursor: pointer
+    &:hover
+      border-bottom: 3px solid white
+
+  @media (max-width: 800px)
+    display: flex
+.containerBlack
+  width: 100%
+  max-width: 1920px
+  margin: 0 auto
+  background: #24304F
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.19)
+  .content
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    background-color: #24304F
+    .menu
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      max-width: 1440px
+      background: #24304F
+      //box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.09)
+      width: 100%
+      align-items: center
+      height: max-content
+      padding: 5px 140px
+      .logoBlock
+        display: flex
+        flex-direction: row
+        gap: 10px
+      .logoText1
+        color: white
+        font-weight: 700
+        font-size: 30px
+      .logoText2
+        color: #2DD792
+        font-weight: 700
+        font-size: 30px
+      .burger_menu
+        display: none
+      @media (max-width: 1100px)
+        padding: 0px 64px
+        min-height: 64px
+        height: 100%
+        align-items: center
+        .logoBlock
+          margin-top: 0px
+        .logoText1
+          color: #4E7FF1
+          font-size: 20px
+        .logoText2
+          font-size: 20px
+        img
+          width: 40px
+          height: 40px
+
+      @media (max-width: 500px)
+        padding: 0 20px 0px
+    img
+      cursor: pointer
+      z-index: 5
+
+    .white
+      color: white
+      font-size: 14px
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      font-family: 'Open Sans', sans-serif
+      line-height: 21px
+      z-index: 5
+      height: 64px
+
+      border-bottom: 3px solid transparent
+      border-top: 3px solid transparent
+      &:hover
+        border-bottom: 3px solid white
+        color: white
+    @media (max-width: 800px)
+
+      .menu
+
+        .burger_menu
+          z-index: 5
+          display: flex
+          justify-content: center
+          align-items: center
+          text-align: center
+          width: 64px
+          cursor: pointer
+          background: transparent
+          border: none
+          position: absolute
+          right: 0
+          height: 64px
+      .white, .link
+        display: none
+.textBlock
+  display: flex
+  flex-direction: row
+  align-items: center
+  max-width: 1440px
+  width: 100%
+  margin-bottom: 190px
+  gap: 65px
+  padding: 60px 140px
+  @media (max-width: 1100px)
+    padding: 64px
+    justify-content: space-between
+    gap: 10px
+  @media (max-width: 800px)
+    margin-bottom: 0
+  @media (max-width: 600px)
+    gap: 20px
+    padding: 40px
+.textContent
+  display: flex
+  flex-direction: column
+  gap: 35px
+  .gapLine
+    background: #FFD601
+    height: 2px
+    width: 46px
+  .title
+    color: white
+    font-size: 60px
+    font-weight: 700
+  .text
+    color: #B7BFD8
+    font-size: 18px
+    line-height: 160%
+  @media (max-width: 1100px)
+
+    .title
+      font-size: 45px
+    .text
+      width: 325px
+  @media (max-width: 800px)
+    .title
+      font-size: 30px
+
+    .text
+      font-size: 15px
+      width: 100%
+  @media (max-width: 600px)
+    gap: 20px
+
+    .text
+      width: 100%
+.loginBlock
+  padding: 45px 80px
+  border-radius: 10px
+  color: white
+  max-width: 325px
+  width: 100%
+  border: 1px dashed rgba(255, 255, 255, 0.5)
+  display: flex
+  flex-direction: column
+  gap: 20px
+  align-items: center
+  justify-content: center
+  p
+    font-weight: 700
+    font-size: 18px
+    line-height: 160%
+  .loginButton
+    background: #4E7FF1
+    max-width: 168px
+    width: 100%
+    padding: 15px 50px
+    box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.19)
+    border-radius: 10px
+    display: flex
+    gap: 15px
+    align-items: center
+    cursor: pointer
+    justify-content: center
+    p
+      font-weight: 600
+      font-size: 14px
+      line-height: 21px
+  @media (max-width: 800px)
+    display: none
+

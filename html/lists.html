@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="lists.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript innerHTML</title>
+</head>
+<body>
+<!--<div style="background-color: white;display: flex;flex-direction: row;align-items: center">-->
+<!--<div   class="item">-->
+<!--    <span class="timeTitle" id="timeTitle"></span>-->
+<!--    <p   id="itemText" ></p>-->
+<!--    <div   id="buttonRow">-->
+<!--        <button id="buttonZoom" class="buttonZoom" ></button>-->
+<!--        <div style="display: flex;flex-direction: row;gap: 5px;cursor: pointer" id="buttonMore">-->
+<!--            <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>-->
+<!--            <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>-->
+<!--            <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</div>-->
+<!--    <div class="listItem" id="listItem">-->
+<!--        <span class="listItemName" id="listItemName"></span>-->
+<!--    </div>-->
+<!--</div>-->
+<script>
+  // let data=[{time:'18:00-19:00',text:'Meeting With Designers,30 Min, Heorhii Matviichuk',listData:[{
+  //   name:'Jack White',
+  //     email:'adsasada@asdas.com',
+  //     place:'Eastern Europe (GMT -0:00)',
+  //     answers:'Answers: 2/3',
+  //     date:'Booked: 19:21, 13 Aug, 2022'
+  //   }]}, ]
+  //
+  // for (let i = 0; i < data.length; i++) {
+  //   let item = document.getElementById('item');
+  //   let span = document.getElementById("timeTitle");
+  //   let p = document.getElementById("itemText");
+  //   let button = document.getElementById("buttonZoom");
+  //   let buttonMore = document.getElementById("buttonMore");
+  //   let buttonRow = document.getElementById("buttonRow");
+  //   buttonRow.appendChild(button)
+  //   buttonRow.appendChild(buttonMore)
+  //   button.textContent='Open Zoom Link'
+  //   span.textContent = data[i].time
+  //   p.textContent = data[i].text
+  //   item.appendChild(span)
+  //   item.appendChild(p)
+  //   item.appendChild(buttonRow)
+  //   for (let j = 0; j < data[i].listData.length; j++) {
+  //     let item = document.getElementById('listItem');
+  //     let span = document.getElementById("listItemName");
+  //     span.textContent= data[i].listData[j].name
+  //     item.appendChild(span)
+  //   }
+  //
+  //
+  // }
+
+  let peoples = 1;
+  let handshake = 0;
+  const getPeople=(handshakes)=>{
+    while (handshake < handshakes) {
+      peoples += 1;
+      handshake += (peoples - 1);
+      console.log(handshake,peoples)
+    }
+    return peoples
+  }
+  alert('Всего пришло ' + getPeople(1) + ' человек.')
+</script>
+<div class="container">
+<div class="infoRow">
+    <div class="item" style="justify-content: space-between">
+        <div style="display: flex;flex-direction: column;gap: 10px">
+            <span class="timeTitle">16:00 - 17:00</span>
+            <p class="itemText">Meeting With Designers</br>30 Min, Heorhii Matviichuk</p>
+        </div>
+
+        <div class="buttonRow">
+            <button class="buttonZoom">Open Zoom Link</button>
+            <div style="display: flex;flex-direction: row;gap: 5px;cursor: pointer">
+                <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+                <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+                <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+            </div>
+        </div>
+    </div>
+    <div class="listScrollBlock">
+        <div class="item" style="height: 180px;border: none">
+            <span class="timeTitle">Jack White</span>
+            <p class="itemText">adsasada@asdas.com </p>
+            <p class="itemText">Eastern Europe (GMT -0:00)</p>
+            <p class="listItemAnswers">Answers: 2/3</p>
+            <p class="itemText">Booked: 19:21, 13 Aug, 2022 </p>
+        </div>
+    </div>
+</div>
+<div class="infoRow">
+    <div class="item" style="justify-content: space-between">
+        <div style="display: flex;flex-direction: column;gap: 10px">
+            <span class="timeTitle">16:00 - 17:00</span>
+            <p class="itemText">30 Min Meeting</br>30 Min, 2 Team Members</p>
+        </div>
+
+        <div class="buttonRow">
+            <button class="buttonZoom">Open Zoom Link</button>
+            <div style="display: flex;flex-direction: row;gap: 5px;cursor: pointer">
+                <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+                <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+                <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+            </div>
+        </div>
+    </div>
+    <div class="listScrollBlock">
+        <div class="item" style=" border: none ">
+            <span class="timeTitle">Jack White</span>
+            <p class="itemText">adsasada@asdas.com </p>
+            <p class="itemText">Eastern Europe (GMT -0:00)</p>
+            <p class="listItemAnswers">Answers: 2/3</p>
+            <p class="itemText">Booked: 19:21, 13 Aug, 2022 </p>
+        </div>
+        <div class="item" style=" border: none; ">
+            <span class="timeTitle">Jack White</span>
+            <p class="itemText">adsasada@asdas.com </p>
+            <p class="itemText">Eastern Europe (GMT -0:00)</p>
+            <p class="listItemAnswers">Answers: 2/3</p>
+            <p class="itemText">Booked: 19:21, 13 Aug, 2022 </p>
+        </div>
+        <div class="item" style=" border: none ">
+            <span class="timeTitle">Jack White</span>
+            <p class="itemText">adsasada@asdas.com </p>
+            <p class="itemText">Eastern Europe (GMT -0:00)</p>
+            <p class="listItemAnswers">Answers: 2/3</p>
+            <p class="itemText">Booked: 19:21, 13 Aug, 2022 </p>
+        </div>
+        <div class="item" style=" border: none">
+            <span class="timeTitle">Jack White</span>
+            <p class="itemText">adsasada@asdas.com </p>
+            <p class="itemText">Eastern Europe (GMT -0:00)</p>
+            <p class="listItemAnswers">Answers: 2/3</p>
+            <p class="itemText">Booked: 19:21, 13 Aug, 2022 </p>
+        </div>
+
+    </div>
+    <div class="moreBlock">
+        21+ Booker
+    </div>
+</div>
+    <div class="infoRow">
+        <div class="item" style="justify-content: space-between">
+            <div style="display: flex;flex-direction: column;gap: 10px">
+                <span class="timeTitle">16:00 - 17:00</span>
+                <p class="itemText">Meeting With Designers</br>30 Min, Heorhii Matviichuk</p>
+            </div>
+
+            <div class="buttonRow">
+                <button class="buttonZoom">Open Zoom Link</button>
+                <div style="display: flex;flex-direction: row;gap: 5px;cursor: pointer">
+                    <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+                    <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+                    <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="listScrollBlock">
+            <div class="item" style="height: 180px;border: none">
+                <span class="timeTitle">Jack White</span>
+                <p class="itemText">adsasada@asdas.com </p>
+                <p class="itemText">Eastern Europe (GMT -0:00)</p>
+                <p class="listItemAnswers">Answers: 2/3</p>
+                <p class="itemText">Booked: 19:21, 13 Aug, 2022 </p>
+            </div>
+        </div>
+    </div>
+    <div class="infoRow">
+        <div class="item" style="justify-content: space-between">
+            <div style="display: flex;flex-direction: column;gap: 10px">
+                <span class="timeTitle">16:00 - 17:00</span>
+                <p class="itemText">Meeting With Designers</br>30 Min, Heorhii Matviichuk</p>
+            </div>
+
+            <div class="buttonRow">
+                <button class="buttonZoom">Open Zoom Link</button>
+                <div style="display: flex;flex-direction: row;gap: 5px;cursor: pointer">
+                    <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+                    <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+                    <div style="border: 2px solid #BEC5D0;border-radius: 50%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="listScrollBlock">
+            <div class="item" style="height: 180px;border: none">
+                <span class="timeTitle">Jack White</span>
+                <p class="itemText">adsasada@asdas.com </p>
+                <p class="itemText">Eastern Europe (GMT -0:00)</p>
+                <p class="listItemAnswers">Answers: 2/3</p>
+                <p class="itemText">Booked: 19:21, 13 Aug, 2022 </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>

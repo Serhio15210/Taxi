@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../loginGmail.css"/>
+    <style>
+        .container {
+            background-color: #EFF4FE;
+            padding: 148px 220px 30px;
+
+
+        }
+
+        .content1 {
+            margin: auto auto 40px;
+            background-color: white;
+            padding: 65px 0 0;
+            position: relative;
+            border-radius: 20px;
+            -moz-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            -webkit-box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            justify-content: center;
+            align-items: center;
+
+            box-sizing: border-box;
+        }
+        .dearAcceptTitle{
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 160%;
+            text-align: center;
+            color: #2DD792;
+        }
+        .content3{
+            background: #4E7FF1;
+            box-shadow: 0px 60px 100px -14px rgba(47, 100, 221, 0.17);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        .content3Title{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 140%;
+            color: #FFFFFF;
+            margin: auto auto 25px;
+            max-width: 330px;
+            width: 100%;
+            text-align: center;
+
+        }
+        .content3Text{
+            font-size: 18px;
+            line-height: 140%;
+            color: #FFFFFF;
+            opacity: 0.7;
+            margin: auto;
+            text-align: center;
+        }
+        .title {
+
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 110%;
+            text-align: center;
+            color: #24304F;
+            margin: auto;
+
+
+            justify-content: space-between;
+        }
+        #leftItem{
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            margin-top: 20px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+        #rightItem{
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+            margin-top: 20px;
+
+        }
+
+        .dearTitle {
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 110%;
+            text-align: center;
+            color: #24304F;
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+
+        .dearText {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            text-align: center;
+            color: #566488;
+        }
+        .content1 .dearText {
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+        .loginButton {
+            max-width: 231px;
+            cursor: pointer;
+            width: 100%;
+            height: 54px;
+            background: #4E7FF1;
+            box-shadow: 0px 10px 40px rgba(78, 127, 241, 0.27);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+
+            margin: auto;
+        }
+
+        .footerText{
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            color: #8B96B5;
+            margin: 30px auto auto;
+            width: 430px;
+        }
+        .infoRow{
+            display: flex;
+            max-width: 300px;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            justify-content: space-between;
+        }
+        .infoRow p{
+            font-size: 18px;
+            line-height: 140%;
+            color: #FFFFFF;
+            opacity: 0.7;
+            margin: auto;
+        }
+        @media screen and (max-width: 600px){
+            .container{
+                padding-right: 38px;
+                padding-left: 38px;
+                padding-top: 20px;
+            }
+            .content1{
+                padding: 25px 0 0;
+            }
+            #leftItem{
+                display: none;
+            }
+            #rightItem{
+               display: none;
+
+            }
+            .content1 .dearAcceptTitle {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .content1 .dearText {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .content3{
+                padding: 20px;
+            }
+            .content3Title{
+                font-size: 26px;
+                margin-bottom: 18px;
+                max-width: 100%;
+                line-height: 140%
+            }
+            .content3Text{
+                font-size: 14px;
+                max-width: 100%;
+            }
+            .title {
+                width: 100%;
+                font-size: 26px;
+                text-align: left;
+                margin: unset;
+                padding: 0;
+            }
+
+            #cost{
+                font-size: 20px;
+            }
+
+            .dearText {
+                font-size: 14px;
+                text-align: left;
+            }
+
+            .loginButton {
+                margin-left: 20px;
+            }
+            .footerText{
+                font-size: 14px;
+                line-height: 160%;
+                text-align: center;
+                color: #8B96B5;
+                max-width: 300px;
+                width: 100%;
+                margin: 30px auto auto;
+            }
+            .infoRow p{
+                font-size: 14px;
+            }
+            .infoRow div{
+                margin-right: 10px !important;
+            }
+            .dearAcceptTitle{
+                text-align: left;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content1">
+        <div style="display: flex;padding: 0 20px 0">
+            <img src="http://194.163.142.233:3000/partyItem.png" id="leftItem"/>
+            <p class="title">Welcome <span style="color: #4E7FF1">on board</span></p>
+            <img src="http://194.163.142.233:3000/partyItem.png" id="rightItem"/>
+        </div>
+
+
+        <p class="dearText"><b>Dear {{name}}!</b> We are happy to tell you that</p>
+        <p class="dearAcceptTitle">your profile has been accepted!</p>
+        <p class="dearText">We are very glad to welcome you and be able to collaborate.</p>
+        <p class="dearText" style="margin-top: 20px">You can now login to your Partner’s Dashboard and check for new rides available in your region.</p>
+
+        <div class="loginButton">
+
+            <div style="display: flex;align-items: center;margin: auto">
+                <a href="/" style="color: white;font-weight: 600;text-decoration: none;margin: auto 12px auto auto;">PARTNER LOGIN</a>
+                <img src="http://194.163.142.233:3000/buttonImg.png" width="32px" height="32px" style="margin: auto"/>
+            </div>
+
+        </div>
+        <img src="http://194.163.142.233:3000/acceptPartner.png" width="100%" style="margin-top: 20px" />
+    </div>
+    <p class="footerText" style="text-align: center;margin-bottom: 30px">By accepting to work with us, you agreed to our <a href="/" style="color: #4E7FF1">Terms and Conditions</a> and our <a href="/" style="color: #4E7FF1">Partner’s Cancellation Policy.</a></p>
+    <div class="content3"  >
+        <p class="content3Text"  >If you have any questions,</b>
+        </p>
+        <p class="content3Title">feel free to contact our Support Team:</p>
+        <div class="infoRow">
+            <div style="display: flex;margin-right: 30px">
+                <img src="http://194.163.142.233:3000/watsapp.png" width="25px" height="25px" style="margin-right: 20px"/>
+                <p  >Whatsapp</p>
+            </div>
+            <div style="display: flex;margin-left: 30px">
+                <img src="http://194.163.142.233:3000/email.png" width="25px" height="25px" style="margin-right: 20px"/>
+                <p  >Email</p>
+            </div>
+        </div>
+
+    </div>
+    <p class="footerText">Made with ❤</p>
+</div>
+</body>
+</html>
